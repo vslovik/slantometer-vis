@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css?family=Cousine:400,700');
+
+
+body {
+	font-size: 14px;
+	font-family: 'Cousine';
+}
+
+/*CHART GENERAL*/
+.chart-wrapper{
+	margin-left:-.99%;
+	width: 102%;
+}
+
+/*AXES*/
+.axis path, .axis line {
+  fill: none;
+  stroke: #3a403d;
+  stroke-width: 1px;
+  shape-rendering: crispEdges;
+}
+.axis text {
+  font-size: .625em;
+}
+
+/*LAYERS*/
+.chart .layer {
+	cursor: crosshair;
+}
+
+/*TIP*/
+.tip {
+  background-color: hsla(0,0%,100%,.9);
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 12px;
+  line-height: 1.4;
+  width: 180px;
+}
+.tip .year {
+  font-weight: 900;
+  font-size: 12px;
+  margin-bottom: 2px;
+}
+.tip .swatch {
+  width: 11px;
+  height: 11px;
+  float: left;
+  margin-top: 6px;
+  margin-right: 4px;
+}
+
+/*LEGEND*/
+.legend {
+	position: absolute;
+	top: 15px;
+	left: 30px;
+	background-color: hsla(0,0%,100%,.9);
+	padding: 5px 10px 5px 10px;
+	border-radius: 5px;
+}
+.legend .title {
+	margin-bottom: 2px;
+	font-weight: 900;
+}
+.legend .item {
+	font-size: .75em;
+}
+.legend .swatch {
+	width: 10px;
+	height: 10px;
+	margin-top: 3px;
+	float: left;
+	margin-right: 5px;
+}
