@@ -52,8 +52,8 @@ function tipX(x){
 function chart(column, filterBy, groupBy) {
 
   // basic chart dimensions
-  var margin = {top: 20, right: 20, bottom: 20, left: 20};
-  var width = $('.chart-wrapper').width()/2 - margin.left - margin.right;
+  var margin = {top: 20, right: 20, bottom: 30, left: 20};
+  var width = $('.chart-wrapper').width() - margin.left - margin.right;
   var height = breakHeight(breakpoint) - margin.top - margin.bottom;
 
   // chart top used for placing the tooltip
@@ -78,7 +78,7 @@ function chart(column, filterBy, groupBy) {
   var y = d3.scale.linear()
       .range([height-10, 0]);
 
-  var colorrange = ['rgba(2,248,101, 0.2)','rgba(255,178,137, 0.5)', 'rgba(255,234,38, 0.5)'];
+  var colorrange = ['rgba(2,248,101,0.2)', 'rgba(255,234,38,0.5)', 'rgba(255,178,137,0.5)'];
 
   var z = d3.scale.ordinal()
       .range(colorrange);
