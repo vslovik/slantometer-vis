@@ -55,7 +55,7 @@ function chart(column, filterBy, groupBy) {
   var margin = {top: 20, right: 20, bottom: 30, left: 20};
   var width = $('.chart-wrapper').width()/2 - margin.left - margin.right;
   var height = breakHeight(breakpoint) * 0.7 - margin.top - margin.bottom;
-
+  var lineHeight = height;
   // chart top used for placing the tooltip
   var chartTop = $('.chart.'+groupBy+'.'+filterBy).offset().top;
 
@@ -75,15 +75,13 @@ function chart(column, filterBy, groupBy) {
   var x = d3.time.scale()
       .range([0, width]);
 
-  var y = d3.scale.linear()
-      .range([height-10, 0]);
+  var yStacked = d3.scale.linear().range([height-10, 0]);
+  var yMultiple= d3.scale.linear().range([height-10, 0]);
 
   var colorrange = ['rgba(2,248,101,0.2)', 'rgba(255,234,38,0.5)', 'rgba(255,178,137,0.5)'];
   var z = d3.scale.ordinal()
       .range(colorrange);
-  var nest = d3.nest()
-      .key(function(d) { return d.key; });
-  var lineHeight = height / nest.length;
+  var nest = d3.nest().key(function(d) { return d.key; });
 
   // the x-axis. note that the ticks are years, and we'll show every 5 years
   var xAxis = d3.svg.axis()
@@ -113,15 +111,15 @@ function chart(column, filterBy, groupBy) {
   var areaStacked = d3.svg.area()
       .interpolate("basis")
       .x(function(d) { return x(d.date); })
-      .y0(function(d) { return y(d.y0)-.2; }) // -.2 to create a little space between the layers
-      .y1(function(d) { return y(d.y0 + d.y)+.2; }); // +.2, likewise
+      .y0(function(d) { return yStacked(d.y0)-.2; }) // -.2 to create a little space between the layers
+      .y1(function(d) { return yStacked(d.y0 + d.y)+.2; }); // +.2, likewise
 
 
   var areaMultiples = d3.svg.area()
       .interpolate("basis")
       .x(function(d) { return x(d.date); })
-      .y0(function(d) { return  lineHeight; }) // -.2 to create a little space between the layers
-      .y1(function(d) { return y(d.value); }); // +.2, likewise
+      .y0(function(d) { return lineHeight; }) // -.2 to create a little space between the layers
+      .y1(function(d) { return yMultiple(d.value); }); // +.2, likewise
 
 
   var svg = d3.select(".chart."+groupBy+'.'+filterBy).append("svg")
@@ -242,13 +240,16 @@ function chart(column, filterBy, groupBy) {
 
     // generate our layers
     var layers = stack(nest.entries(data));
+    var nested = nest.entries(data);
+    lineHeight = height / nested.length;
 
     // our legend is based on our layers
     legend(layers);
 
     // set the domains
     x.domain(d3.extent(data, function(d) { return d.date; }));
-    y.domain([0, d3.max(data, function(d) { return d.y0 + d.y; })]);
+    yStacked.domain([0, d3.max(data, function(d) { return d.y0 + d.y; })]);
+    yMultiple.domain([0, d3.max(data, function(d) { return d.value; })]).range([lineHeight, 0]);
 
     // and now we're on to the data joins and appending
     svg.selectAll(".layer")
@@ -264,9 +265,7 @@ function chart(column, filterBy, groupBy) {
         .call(xAxis);
 
 
-
     d3.selectAll("input").on("change", change);
-    nest = d3.nest().key(function(d) { return d.key; });
 
     function change() {
       if (this.value === "multiples") transitionMultiples();
@@ -276,26 +275,28 @@ function chart(column, filterBy, groupBy) {
     function transitionMultiples() {
       console.log("multiples")
       var t = svg.transition().duration(750),
-          g = t.selectAll(".layer").attr('transform', function(d, i){ return "translate(0," + (i+1)  * 20 +")"; });
-      // g.selectAll(".layer").attr("d", function(d) { return areaMultiples(d.values); });
-      // g.select(".group-label").attr("y", function(d) { return lineHeight; });
+          g = t.selectAll(".layer").attr('transform', function(d, i){ return "translate(0," + (height - (i+1) * lineHeight) +")"; });
+      g.attr("d", function(d) { return areaMultiples(d.values); });
+      g.attr("y", function(d) { return lineHeight; });
     }
 
     function transitionStacked() {
       console.log("stacked")
       var t = svg.transition().duration(750),
           g = t.selectAll(".layer").attr('transform', function(){ return "translate(0,0)"; });
-      // g.selectAll(".layer").attr("d", function(d) { return areaStacked(d.values); });
-      // g.select(".group-label").attr("y", function(d) { return yScaleStacked(d.values[0].y0); });
+      g.attr("d", function(d) { return areaStacked(d.values); });
+      g.attr("y", function(d) { return yStacked(d.values[0].y0); });
     }
 
 
 
 
-
-
-
-
+// ***************************************************************************
+// ***************************************************************************
+// ***************************************************************************
+// ***************************************************************************
+// ***************************************************************************
+// ***************************************************************************
 
 
 
