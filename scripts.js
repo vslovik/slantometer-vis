@@ -53,8 +53,8 @@ function chart(column, filterBy, groupBy) {
 
   // basic chart dimensions
   var margin = {top: 20, right: 20, bottom: 30, left: 20};
-  var width = $('.chart-wrapper').width() - margin.left - margin.right;
-  var height = breakHeight(breakpoint) - margin.top - margin.bottom;
+  var width = $('.chart-wrapper').width()/2 - margin.left - margin.right;
+  var height = breakHeight(breakpoint) * 0.7 - margin.top - margin.bottom;
 
   // chart top used for placing the tooltip
   var chartTop = $('.chart.'+groupBy+'.'+filterBy).offset().top;
@@ -79,9 +79,11 @@ function chart(column, filterBy, groupBy) {
       .range([height-10, 0]);
 
   var colorrange = ['rgba(2,248,101,0.2)', 'rgba(255,234,38,0.5)', 'rgba(255,178,137,0.5)'];
-
   var z = d3.scale.ordinal()
       .range(colorrange);
+  var nest = d3.nest()
+      .key(function(d) { return d.key; });
+  var lineHeight = height / nest.length;
 
   // the x-axis. note that the ticks are years, and we'll show every 5 years
   var xAxis = d3.svg.axis()
@@ -101,8 +103,6 @@ function chart(column, filterBy, groupBy) {
       .x(function(d) { return d.date; })
       .y(function(d) { return d.value; });
 
-  var nest = d3.nest()
-      .key(function(d) { return d.key; });
 
   // there are some ways other than "basis" to interpolate the area between data points
   // for example, you can use "cardinal", which makes the streams a little more wiggly.
@@ -110,11 +110,19 @@ function chart(column, filterBy, groupBy) {
   // you won't see a flat line across the center of the chart. instead, it will look all bumpy.
   // ultimately, "cardinal" interpolation is more likely to give an inaccurate represenation of the data,
   // which is anyway a danger with any type of interpolation, including "basis"
-  var area = d3.svg.area()
+  var areaStacked = d3.svg.area()
       .interpolate("basis")
       .x(function(d) { return x(d.date); })
       .y0(function(d) { return y(d.y0)-.2; }) // -.2 to create a little space between the layers
       .y1(function(d) { return y(d.y0 + d.y)+.2; }); // +.2, likewise
+
+
+  var areaMultiples = d3.svg.area()
+      .interpolate("basis")
+      .x(function(d) { return x(d.date); })
+      .y0(function(d) { return  lineHeight; }) // -.2 to create a little space between the layers
+      .y1(function(d) { return y(d.value); }); // +.2, likewise
+
 
   var svg = d3.select(".chart."+groupBy+'.'+filterBy).append("svg")
       .attr("width", width + margin.left + margin.right)
@@ -203,18 +211,18 @@ function chart(column, filterBy, groupBy) {
         currYear = {};
       }
 
-      categories.forEach(function(area){
+      categories.forEach(function(areaStacked){
 
         var obj = {};
-        if (currYear[area] == undefined){
+        if (currYear[areaStacked] == undefined){
           // if the year does not have any in a particular category
-          obj.key = area;
+          obj.key = areaStacked;
           obj.value = 0;
           obj.date = moment(i.toString())._d;
         } else {
-          obj.key = currYear[area][0][groupBy];
-          obj.value = currYear[area].length;
-          obj.date = moment(currYear[area][0].year)._d;
+          obj.key = currYear[areaStacked][0][groupBy];
+          obj.value = currYear[areaStacked].length;
+          obj.date = moment(currYear[areaStacked][0].year)._d;
         }
 
         newData.push(obj);
@@ -247,13 +255,49 @@ function chart(column, filterBy, groupBy) {
         .data(layers)
       .enter().append("path")
         .attr("class", "layer")
-        .attr("d", function(d) { return area(d.values); })
+        .attr("d", function(d) { return areaStacked(d.values); })
         .style("fill", function(d, i) { return z(i); });
 
     svg.append("g")
         .attr("class", "x axis")
         .attr("transform", "translate(0," + height + ")")
         .call(xAxis);
+
+
+
+    d3.selectAll("input").on("change", change);
+    nest = d3.nest().key(function(d) { return d.key; });
+
+    function change() {
+      if (this.value === "multiples") transitionMultiples();
+      else transitionStacked();
+    }
+
+    function transitionMultiples() {
+      console.log("multiples")
+      var t = svg.transition().duration(750),
+          g = t.selectAll(".layer").attr('transform', function(d, i){ return "translate(0," + (i+1)  * 20 +")"; });
+      // g.selectAll(".layer").attr("d", function(d) { return areaMultiples(d.values); });
+      // g.select(".group-label").attr("y", function(d) { return lineHeight; });
+    }
+
+    function transitionStacked() {
+      console.log("stacked")
+      var t = svg.transition().duration(750),
+          g = t.selectAll(".layer").attr('transform', function(){ return "translate(0,0)"; });
+      // g.selectAll(".layer").attr("d", function(d) { return areaStacked(d.values); });
+      // g.select(".group-label").attr("y", function(d) { return yScaleStacked(d.values[0].y0); });
+    }
+
+
+
+
+
+
+
+
+
+
 
     // abbreviate axis tick text on small screens
     if (breakpoint == 'xs') {
