@@ -37,7 +37,7 @@ function chart() {
   var xAxis = d3.svg.axis()
       .scale(x)
       .orient("bottom")
-      .ticks(d3.timeYears, 5);
+      .ticks(d3.time.years, 1);
 
   var stack = d3.layout.stack()
       .offset("silhouette")
@@ -82,11 +82,16 @@ function chart() {
         d.key = d.tag;
         d.value = +d.sentences;
         d.date = parseDate(d.year);
+        d.text = d.text;
+    });
+
+    data.sort(function(a, b) {
+      return b.date - a.date;
     });
 
     // generate our layers
-    var layers = stack(nest.entries(data));
     var nested = nest.entries(data);
+    var layers = stack(nested);
     lineHeight = height / nested.length;
 
     // set the domains
@@ -94,7 +99,6 @@ function chart() {
     yStacked.domain([0, d3.max(data, function(d) { return d.y0 + d.y; })]);
     yMultiple.domain([0, d3.max(data, function(d) { return d.value; })]).range([lineHeight, 0]);
 
-    // and now we're on to the data joins and appending
     svg.selectAll(".layer")
         .data(layers)
       .enter().append("path")
@@ -123,16 +127,16 @@ function chart() {
 
     function transitionMultiples() {
       console.log("multiples")
-      var t = svg.transition().duration(750),
-          g = t.selectAll(".layer").attr('transform', function(d, i){ return "translate(0," + (height - (i+1) * lineHeight) +")"; });
+      var t = svg.transition().duration(750);
+      var   g = t.selectAll(".layer").attr('transform', function(d, i){ return "translate(0," + (height - (i+1) * lineHeight) +")"; });
       g.attr("d", function(d) { return areaMultiples(d.values); });
       g.attr("y", function(d) { return lineHeight; });
     }
 
     function transitionStacked() {
       console.log("stacked")
-      var t = svg.transition().duration(750),
-          g = t.selectAll(".layer").attr('transform', function(){ return "translate(0,0)"; });
+      var t = svg.transition().duration(750);
+      var    g = t.selectAll(".layer").attr('transform', function(){ return "translate(0,0)"; });
       g.attr("d", function(d) { return areaStacked(d.values); });
       g.attr("y", function(d) { return yStacked(d.values[0].y0); });
     }
@@ -164,7 +168,7 @@ function chart() {
 
 // ***************************************************************************
 // 
-//        HELPER FUNCTIONS
+//        MOUSEROVER HELPER FUNCTIONS
 // 
 // ***************************************************************************
 
@@ -191,7 +195,7 @@ function chart() {
           if (xDate == year){
               tooltip
                 .style("left", tipX(mousex) +"px")
-                .html( "<div class='year'>" + year + "</div><div class='key'><div style='background:" + color + "' class='swatch'>&nbsp;</div>" + f.key + "</div><div class='value'>" + f.value + "</div>" )
+                .html( "<div class='year'>" + year + "</div><div class='key'><div style='background:" + color + "' class='swatch'>&nbsp;</div></div><div class='value'>" + f.value + "  " + f.text + "</div>" )
                 .style("visibility", "visible");
           }
         });
