@@ -7,14 +7,14 @@
 // 
 // ***************************************************************************
 // ***************************************************************************
-function chart() {
+function chart(chartName, dataFile) {
 
   var margin = {top: 20, right: 20, bottom: 30, left: 20};
   var width = $('.chart-wrapper').width()/2 - margin.left - margin.right;
   var height = breakHeight(breakpoint) * 0.7 - margin.top - margin.bottom;
   var lineHeight = height;
 
-  var chartTop = $('.chart').offset().top;
+  var chartTop = $(chartName).offset().top;
   var parseDate = d3.time.format("%Y").parse;
 
   var tooltip = d3.select("body")
@@ -60,7 +60,7 @@ function chart() {
       .y1(function(d) { return yMultiple(d.value); }); // +.2, likewise
 
 
-  var svg = d3.select(".chart").append("svg")
+  var svg = d3.select(chartName).append("svg")
       .attr("width", width + margin.left + margin.right)
       .attr("height", height + margin.top + margin.bottom)
     .append("g")
@@ -73,7 +73,7 @@ function chart() {
 // 
 // ***************************************************************************
 
-  d3.csv("data.csv", function(data) {
+  d3.csv(dataFile, function(data) {
 
     // parse the data (see parsing function, above)
     // data = parse(data);
@@ -85,16 +85,14 @@ function chart() {
         d.text = d.text;
     });
 
-    data.sort(function(a, b) {
-      return b.date - a.date;
-    });
+    // data.sort(function(a, b) {
+    //   return b.date - a.date;
+    // });
 
-    // generate our layers
     var nested = nest.entries(data);
     var layers = stack(nested);
     lineHeight = height / nested.length;
 
-    // set the domains
     x.domain(d3.extent(data, function(d) { return d.date; }));
     yStacked.domain([0, d3.max(data, function(d) { return d.y0 + d.y; })]);
     yMultiple.domain([0, d3.max(data, function(d) { return d.value; })]).range([lineHeight, 0]);
@@ -147,7 +145,7 @@ function chart() {
 // 
 // ***************************************************************************
 
-    $('.chart').prepend('<div class="legend"><div class="title">Tag</div></div>');
+    $(chartName).prepend('<div class="legend"><div class="title">Tag</div></div>');
     $('.legend').hide();
     var legend = []
     layers.forEach(function(d,i){
@@ -160,7 +158,7 @@ function chart() {
     });
 
     legend.forEach(function(d,i){
-      $('.chart .legend').append('<div class="item"><div class="swatch" style="background: '+d.color+'"></div>'+d.key+'</div>');
+      $(chartName +' .legend').append('<div class="item"><div class="swatch" style="background: '+d.color+'"></div>'+d.key+'</div>');
     });
 
     $('.legend').fadeIn();
@@ -208,7 +206,7 @@ function chart() {
     });
 
     // vertical line to help orient the user while exploring the streams
-    var vertical = d3.select(".chart")
+    var vertical = d3.select(chartName)
           .append("div")
           .attr("class", "remove")
           .style("position", "absolute")
@@ -220,7 +218,7 @@ function chart() {
           .style("left", "0px")
           .style("background", "#fcfcfc");
 
-    d3.select(".chart")
+    d3.select(chartName)
         .on("mousemove", function(){
            mousex = d3.mouse(this);
            mousex = mousex[0] + 5;
@@ -242,7 +240,8 @@ function chart() {
 // ***************************************************************************
 // ***************************************************************************
 
-chart();
+chart(".chart", "data.csv");
+chart(".chart1", "data.csv");
 
 
 
