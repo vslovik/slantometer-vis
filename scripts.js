@@ -7,11 +7,11 @@
 // 
 // ***************************************************************************
 // ***************************************************************************
-function chart(chartName, dataFile) {
+function chart(chartName, dataFile, inputName) {
 
   var margin = {top: 20, right: 20, bottom: 30, left: 20};
-  var width = $('.chart-wrapper').width()/2 - margin.left - margin.right;
-  var height = breakHeight(breakpoint) * 0.7 - margin.top - margin.bottom;
+  var width = $('.chart-wrapper').width() * 0.3 - margin.left - margin.right;
+  var height = breakHeight(breakpoint) * 0.4 - margin.top - margin.bottom;
   var lineHeight = height;
 
   var chartTop = $(chartName).offset().top;
@@ -116,7 +116,7 @@ function chart(chartName, dataFile) {
 // 
 // ***************************************************************************
 
-    d3.selectAll("input").on("change", change);
+    d3.selectAll(inputName).on("change", change);
 
     function change() {
       if (this.value === "multiples") transitionMultiples();
@@ -211,12 +211,12 @@ function chart(chartName, dataFile) {
           .attr("class", "remove")
           .style("position", "absolute")
           .style("z-index", "19")
-          .style("width", "2px")
-          .style("height", "460px")
-          .style("top", "10px")
-          .style("bottom", "30px")
+          .style("width", "8px")
+          .style("height", height)
+          .style("top", "0px")
+          .style("bottom", "10px")
           .style("left", "0px")
-          .style("background", "#fcfcfc");
+          .style("background", "#fff");
 
     d3.select(chartName)
         .on("mousemove", function(){
@@ -240,8 +240,9 @@ function chart(chartName, dataFile) {
 // ***************************************************************************
 // ***************************************************************************
 
-chart(".chart", "data.csv");
-chart(".chart1", "data.csv");
+chart(".chart1", "data.csv", "input");
+chart(".chart2", "data2.csv", "input");
+chart(".chart3", "data.csv", "input");
 
 
 

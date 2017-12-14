@@ -73,3 +73,7 @@ body {
 	float: left;
 	margin-right: 6px;
 }
+
+form {
+	display: none;
+}
