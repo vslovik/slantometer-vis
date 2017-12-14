@@ -1,0 +1,13 @@
+year,tag,sentences,channel
+2011,Green,7, ABC
+2013,Green,3, ABC
+2015,Green,2, ABC
+2016,Green,1, ABC
+2011,Yellow,2, ABC
+2013,Yellow,4, ABC
+2015,Yellow,3, ABC
+2016,Yellow,5, ABC
+2011,Red,1, ABC
+2013,Red,3, ABC
+2015,Red,5, ABC
+2016,Red,10, ABC

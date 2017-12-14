@@ -77,14 +77,13 @@ function chart(chartName, dataFile, inputName) {
 
     // parse the data (see parsing function, above)
     // data = parse(data);
-
+    var title = "";
     data.forEach(function(d) {
         d.key = d.tag;
         d.value = +d.sentences;
         d.date = parseDate(d.year);
-        d.text = d.text;
+        title = d.channel;
     });
-
     // data.sort(function(a, b) {
     //   return b.date - a.date;
     // });
@@ -144,10 +143,11 @@ function chart(chartName, dataFile, inputName) {
 //        LEGEND
 // 
 // ***************************************************************************
-
-    $(chartName).prepend('<div class="legend"><div class="title">Tag</div></div>');
+    
+    $(chartName).prepend('<div class="legend"><div class="title">'+title+'</div></div>');
+    
     $('.legend').hide();
-    var legend = []
+    var legend = [];
     layers.forEach(function(d,i){
       var obj = {};
       if (i<7){
@@ -158,7 +158,7 @@ function chart(chartName, dataFile, inputName) {
     });
 
     legend.forEach(function(d,i){
-      $(chartName +' .legend').append('<div class="item"><div class="swatch" style="background: '+d.color+'"></div>'+d.key+'</div>');
+      $(chartName +' .legend').append( '<div class="item"><div class="swatch" style="background: '+d.color+'"></div>'+d.key+'</div>');
     });
 
     $('.legend').fadeIn();
@@ -193,7 +193,7 @@ function chart(chartName, dataFile, inputName) {
           if (xDate == year){
               tooltip
                 .style("left", tipX(mousex) +"px")
-                .html( "<div class='year'>" + year + "</div><div class='key'><div style='background:" + color + "' class='swatch'>&nbsp;</div></div><div class='value'>" + f.value + "  " + f.text + "</div>" )
+                .html( "<div class='year'>" + year + "</div><div class='key'><div style='background:" + color + "' class='swatch'>&nbsp;</div></div><div class='value'>" + f.value + "  " + f.channel + "</div>" )
                 .style("visibility", "visible");
           }
         });
@@ -240,9 +240,9 @@ function chart(chartName, dataFile, inputName) {
 // ***************************************************************************
 // ***************************************************************************
 
-chart(".chart1", "data.csv", "input");
+chart(".chart1", "data1.csv", "input");
 chart(".chart2", "data2.csv", "input");
-chart(".chart3", "data.csv", "input");
+// chart(".chart3", "data3.csv", "input");
 
 
 

@@ -1,9 +1,13 @@
-year,tag,sentences,text
-2011,Green,7, so much text here
-2013,Green,3, so much text here
-2015,Green,2, so much text here
-2016,Green,1, so much text here
-2011,Yellow,2, so much yellow text here
-2013,Yellow,4, so much yellow text here
-2015,Yellow,3, so much yellow text here
-2016,Yellow,5, so much yellow text here
+year,tag,sentences,channel
+2011,Green,7, FOX
+2013,Green,3, FOX
+2015,Green,2, FOX
+2016,Green,1, FOX
+2011,Yellow,2, FOX
+2013,Yellow,4, FOX
+2015,Yellow,3, FOX
+2016,Yellow,5, FOX
+2011,Red,1, FOX
+2013,Red,3, FOX
+2015,Red,5, FOX
+2016,Red,10, FOX
