@@ -7,11 +7,11 @@
 // 
 // ***************************************************************************
 // ***************************************************************************
-function chart(chartName, dataFile, inputName) {
+function chart(chartName, dataFile) {
 
-  var margin = {top: 20, right: 20, bottom: 30, left: 20};
-  var width = $('.chart-wrapper').width() * 0.3 - margin.left - margin.right;
-  var height = breakHeight(breakpoint) * 0.4 - margin.top - margin.bottom;
+  var margin = {top: 20, right: 10, bottom: 20, left: 20};
+  var width = $('.chart-wrapper').width() - margin.left - margin.right;
+  var height = breakHeight(breakpoint) * 0.3 - margin.top - margin.bottom;
   var lineHeight = height;
 
   var chartTop = $(chartName).offset().top;
@@ -27,8 +27,8 @@ function chart(chartName, dataFile, inputName) {
 
   var x = d3.time.scale().range([0, width]);
 
-  var yStacked = d3.scale.linear().range([height-10, 0]);
-  var yMultiple= d3.scale.linear().range([height-10, 0]);
+  var yStacked = d3.scale.linear().range([height, 0]);
+  var yMultiple= d3.scale.linear().range([height, 0]);
 
   var colorrange = ['rgba(2,248,101,0.2)', 'rgba(255,234,38,0.5)', 'rgba(255,178,137,0.5)'];
   var z = d3.scale.ordinal().range(colorrange);
@@ -49,8 +49,8 @@ function chart(chartName, dataFile, inputName) {
   var areaStacked = d3.svg.area()
       .interpolate("basis")
       .x(function(d) { return x(d.date); })
-      .y0(function(d) { return yStacked(d.y0)-.2; }) // -.2 to create a little space between the layers
-      .y1(function(d) { return yStacked(d.y0 + d.y)+.2; }); // +.2, likewise
+      .y0(function(d) { return yStacked(d.y0); }) // -.2 to create a little space between the layers
+      .y1(function(d) { return yStacked(d.y0 + d.y); }); // +.2, likewise
 
 
   var areaMultiples = d3.svg.area()
@@ -90,8 +90,8 @@ function chart(chartName, dataFile, inputName) {
 
     var nested = nest.entries(data);
     var layers = stack(nested);
-    lineHeight = height / nested.length;
 
+    lineHeight = height / nested.length;
     x.domain(d3.extent(data, function(d) { return d.date; }));
     yStacked.domain([0, d3.max(data, function(d) { return d.y0 + d.y; })]);
     yMultiple.domain([0, d3.max(data, function(d) { return d.value; })]).range([lineHeight, 0]);
@@ -115,7 +115,7 @@ function chart(chartName, dataFile, inputName) {
 // 
 // ***************************************************************************
 
-    d3.selectAll(inputName).on("change", change);
+    d3.selectAll("input").on("change", change);
 
     function change() {
       if (this.value === "multiples") transitionMultiples();
@@ -123,18 +123,18 @@ function chart(chartName, dataFile, inputName) {
     }
 
     function transitionMultiples() {
-      console.log("multiples")
-      var t = svg.transition().duration(750);
+
+      var t = d3.selectAll("svg").transition().duration(750);
       var   g = t.selectAll(".layer").attr('transform', function(d, i){ return "translate(0," + (height - (i+1) * lineHeight) +")"; });
-      g.attr("d", function(d) { return areaMultiples(d.values); });
+      // g.attr("d", function(d) { return areaMultiples(d.values); });
       g.attr("y", function(d) { return lineHeight; });
     }
 
     function transitionStacked() {
-      console.log("stacked")
-      var t = svg.transition().duration(750);
-      var    g = t.selectAll(".layer").attr('transform', function(){ return "translate(0,0)"; });
-      g.attr("d", function(d) { return areaStacked(d.values); });
+
+      var t = d3.selectAll("svg").transition().duration(750);
+      var    g = t.selectAll(".layer").attr('transform', function(d, i){ return "translate(0,0)"; });
+      // g.attr("d", function(d) { return areaStacked(d.values); });
       g.attr("y", function(d) { return yStacked(d.values[0].y0); });
     }
 
@@ -240,9 +240,13 @@ function chart(chartName, dataFile, inputName) {
 // ***************************************************************************
 // ***************************************************************************
 
-chart(".chart1", "data1.csv", "input");
-chart(".chart2", "data2.csv", "input");
-// chart(".chart3", "data3.csv", "input");
+
+
+chart(".chart1", "data2.csv");
+chart(".chart2", "data1.csv");
+chart(".chart3", "data3.csv");
+// chart(".chart4", "data3.csv");
+// chart(".chart5", "data3.csv");
 
 
 

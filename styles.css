@@ -6,10 +6,16 @@ body {
 	font-family: 'Cousine';
 }
 
+.row {
+	/*display: inline-block;*/
+	/*border: 1px solid;*/
+}
+
 /*CHART GENERAL*/
 .chart-wrapper{
 	margin-left:-.99%;
-	width: 102%;
+	width: 40vw;
+	/*border: 1px solid;*/
 }
 
 /*AXES*/
@@ -75,5 +81,5 @@ body {
 }
 
 form {
-	display: none;
+	/*display: none;*/
 }
