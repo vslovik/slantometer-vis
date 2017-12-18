@@ -1,0 +1,1040 @@
+ABC_2017_05_16.txt/A3FYWUZK52IC2J, Female, 27, FL, 7, Yes, Liberterian
+
+ABC_2017_05_13.txt/A3ORZPMVIVNGJS, Female, 36, PA, 0, Yes, Democratic
+
+ABC_2017_05_13.txt/A32QWM7BWCSPTS, Female, 39, KS, 4, Yes, Republican
+
+ABC_2017_05_13.txt/A1TKMDI890M1DE, Male, 47, IL, 4, Yes, Democratic
+
+ABC_2017_05_13.txt/A3IR7DFEKLLLO, Male, 40, NY, 5, Yes, Republican
+
+ABC_2017_05_13.txt/A5XQ30GQTHHK6, Female, 45, AZ, 2, Yes, Democratic
+
+ABC_2017_05_13.txt/AFJUL2JDC5TMV, Female, 29, CO, 5, Yes, Independent
+
+ABC_2017_05_14.txt/A16SAB417Y96G4, Male, 30, CO, 1, Yes, Independent
+
+ABC_2017_05_14.txt/A2B8L88BUHVOO6, Male, 38, FL, 3, Yes, Republican
+
+ABC_2017_05_14.txt/A3DMLZASIE8BN6, Male, 30, default, 7, Yes, Independent
+
+ABC_2017_05_14.txt/A1N8TKTLXV92QR, Male, 57, KS, 2, Yes, Independent
+
+ABC_2017_05_16.txt/A2B8L88BUHVOO6, Male, 38, FL, 3, Yes, Republican
+
+ABC_2017_05_16.txt/A3TS2NCBAB9L6V, Male, 33, FL, 0, Yes, Independent
+
+ABC_2017_05_16.txt/AE0IBNKTX4GSG, Male, 50, AZ, 7, Yes, Republican
+
+ABC_2017_05_16.txt/A2NY4882G47O1C, Female, 56, CA, 5, Yes, Independent
+
+NBC_2017_05_13.txt/A1F8ZAE0P2RA8O, Female, 25, CA, 4, Yes, Democratic
+
+NBC_2017_05_13.txt/A1BBO359FPVVOX, Male, 24, MT, 1, Yes, Independent
+
+NBC_2017_05_13.txt/A1YYHFOWV20G1L, Male, 40, KY, 3, Yes, Independent
+
+NBC_2017_05_13.txt/ACI8PUCF5OPDC, Female, 32, WY, 7, Yes, Liberterian
+
+NBC_2017_05_13.txt/A2V8LLZRTOP79S, Female, 25, CA, 5, Yes, Independent
+
+NBC_2017_05_16.txt/ASKV5KO5CV616, Female, 23, CA, 4, Yes, Democratic
+
+NBC_2017_05_16.txt/A2V8LLZRTOP79S, Female, 25, FL, 3, Yes, Republican
+
+NBC_2017_05_16.txt/A15JI9ZIILGCAK, Male, 30, FL, 3, Yes, Liberterian
+
+NBC_2017_05_16.txt/A1CE2XPYCDRHVZ, Female, 41, NY, 6, Yes, Democratic
+
+NBC_2017_05_16.txt/A2XKP0UTQBSTD, Male, 33, FL, 5, Yes, Republican
+
+ABC_2017_04_05.txt/AV1AXTF0Z3KBL, Female, 23, TX, 4, Yes, Independent
+
+ABC_2017_04_05.txt/A53S7J4JGWG38, Male, 41, NY, 7, Yes, Democratic
+
+ABC_2017_04_05.txt/A2V8LLZRTOP79S, Female, 25, CA, 5, Yes, Republican
+
+ABC_2017_04_05.txt/A10HEV2856GIQL, Male, 32, NY, 3, No, Republican
+
+ABC_2017_04_05.txt/A3D0SZN2SSX1, Male, 28, IN, 0, Yes, Democratic
+
+ABC_2017_04_06.txt/A1BBO359FPVVOX, Male, 24, MT, 1, Yes, Independent
+
+ABC_2017_04_06.txt/A3KFEJB0RHIAI8, Female, 41, IL, 5, Yes, Republican
+
+ABC_2017_04_06.txt/A3SNSWMNXQEHAO, Female, 19, CA, 1, Yes, Democratic
+
+ABC_2017_04_06.txt/A30BM2XZJR61S1, Male, 27, IN, 3, Yes, Republican
+
+ABC_2017_04_06.txt/A2HOR5GFCXLPIO, Female, 27, MS, 1, Yes, Republican
+
+ABC_2017_04_07.txt/A3D8HC93F1AVW6, Female, 29, CA, 3, Yes, Independent
+
+ABC_2017_04_07.txt/A2I1SXT6IUDVKQ, Female, 22, WA, 3, Yes, Democratic
+
+ABC_2017_04_07.txt/A2V8LLZRTOP79S, Female, 25, CA, 5, Yes, Republican
+
+ABC_2017_04_07.txt/AT573EVC9I13R, Male, 26, OR, 4, No, Constitution
+
+ABC_2017_04_07.txt/A2Y98EN98DG9I8, Female, 28, FL, 2, Yes, Republican
+
+ABC_2017_04_08.txt/A4T50ODN6SGNR, Male, 36, MA, 4, Yes, Independent
+
+ABC_2017_04_08.txt/A3A4OF8HU57TY2, Female, 27, WA, 0, Yes, Democratic
+
+ABC_2017_04_08.txt/A31BHRW6QKVBQ9, Male, 22, IN, 4, Yes, Independent
+
+ABC_2017_04_08.txt/A2HW8T73XHSYXM, Male, 32, TX, 2, Yes, Republican
+
+ABC_2017_04_08.txt/A2HOR5GFCXLPIO, Female, 27, MS, 1, Yes, Republican
+
+ABC_2017_04_10.txt/A1YMIA0664RNFF, Male, 44, TN, 7, Yes, Independent
+
+ABC_2017_04_10.txt/A1CLVGLQPSHDF, Male, 38, NJ, 7, Yes, Independent
+
+ABC_2017_04_10.txt/A3DMLZASIE8BN6, Male, 30, FL, 6, Yes, Independent
+
+ABC_2017_04_10.txt/A2V8LLZRTOP79S, Female, 25, CA, 4, Yes, Republican
+
+ABC_2017_04_10.txt/A3T55EJNUPEXQT, Male, 27, MN, 1, Yes, Democratic
+
+ABC_2017_09_21.txt/A38LW34F26WBJY, Female, 22, MA, 6, Yes, Democratic
+
+ABC_2017_09_21.txt/A3N7MDS3235JYB, Male, 28, NY, 1, Yes, Democratic
+
+ABC_2017_09_21.txt/A1G1IJV48OWFG6, Male, 22, default, 6, No, Independent
+
+ABC_2017_09_21.txt/A2V8LLZRTOP79S, Female, 25, CA, 4, Yes, Republican
+
+ABC_2017_09_21.txt/A1HPVZQZ7B4XAB, Male, 30, IA, 3, No, Independent
+
+ABC_2017_09_22.txt/A2V8LLZRTOP79S, Female, 25, CA, 4, Yes, Independent
+
+ABC_2017_09_22.txt/A1U5HJN8JXXLI7, Female, 48, OR, 4, Yes, Republican
+
+ABC_2017_09_22.txt/A2HOR5GFCXLPIO, Female, 27, MS, default, Yes, Republican
+
+ABC_2017_09_22.txt/A1TGT6FVIZRNS5, Male, 31, GA, 2, Yes, default
+
+ABC_2017_09_22.txt/A3HKZTDVORNEZ, Female, 24, default, 4, Yes, Independent
+
+ABC_2017_09_23.txt/A2SH2Y8JLMJED7, Male, 27, TX, 3, Yes, Democratic
+
+ABC_2017_09_23.txt/A2V8LLZRTOP79S, Female, 25, CA, 4, Yes, Republican
+
+ABC_2017_09_23.txt/A17I31P5Q8GHK0, Other, 30, default, 7, Yes, Independent
+
+ABC_2017_09_23.txt/A2HOR5GFCXLPIO, Female, 27, MS, 1, Yes, Republican
+
+ABC_2017_09_23.txt/A3HKZTDVORNEZ, Female, 24, IN, 4, Yes, Independent
+
+ABC_2017_09_25.txt/A36ZLJPURT0ILP, Male, 45, PA, 2, Yes, Democratic
+
+ABC_2017_09_25.txt/A2V8LLZRTOP79S, Female, 25, CA, 5, Yes, Republican
+
+ABC_2017_09_25.txt/A31BHRW6QKVBQ9, Male, 22, IN, 4, Yes, Independent
+
+ABC_2017_09_25.txt/A73CNVUAKO1AY, Male, 20, TX, 5, Yes, Independent
+
+ABC_2017_09_25.txt/A3HKZTDVORNEZ, Female, 24, IN, 3, Yes, Independent
+
+ABC_2017_09_26.txt/A1G1IJV48OWFG6, Male, 22, default, 7, No, Independent
+
+ABC_2017_09_26.txt/A1WGAGT5ZN4A3X, Female, 39, GA, 0, No, Independent
+
+ABC_2017_09_26.txt/A31BHRW6QKVBQ9, Male, 22, IN, 4, Yes, Independent
+
+ABC_2017_09_26.txt/A2V8LLZRTOP79S, Female, 25, FL, default, Yes, Independent
+
+ABC_2017_09_26.txt/A1U5HJN8JXXLI7, Female, 48, OR, 4, Yes, Republican
+
+ABC_2017_10_03.txt/ABL3H3O3BI8ZD, Male, 28, NY, 4, Yes, Republican
+
+ABC_2017_10_03.txt/A3SD02HCW68EUL, Male, 26, NY, 3, Yes, Democratic
+
+ABC_2017_10_03.txt/A1E6XBV7FDHI6M, default, default, default, default, default, default
+
+ABC_2017_10_03.txt/ACXBX9CNHAFGW, Male, 28, CA, 4, Yes, Democratic
+
+ABC_2017_10_03.txt/A2GIYD0TEI3V62, Female, 23, TX, 3, No, Independent
+
+ABC_2017_10_04.txt/A2V8LLZRTOP79S, Female, 25, CA, 4, Yes, Republican
+
+ABC_2017_10_04.txt/A3D0SZN2SSX1, Male, 25, IN, 1, Yes, Democratic
+
+ABC_2017_10_04.txt/A73CNVUAKO1AY, Male, 20, TX, 5, Yes, Independent
+
+ABC_2017_10_04.txt/A3HKZTDVORNEZ, Female, default, IN, 5, Yes, Independent
+
+ABC_2017_10_04.txt/A2OOVCEJ5BL1G, Male, 28, TX, 4, Yes, Republican
+
+ABC_2017_10_05.txt/A2HOR5GFCXLPIO, Female, 27, MS, 1, Yes, Republican
+
+ABC_2017_10_05.txt/A1KCEVCJ87REYM, Female, 24, WA, default, No, Independent
+
+ABC_2017_10_05.txt/A3HKZTDVORNEZ, Female, default, IN, 4, Yes, Independent
+
+ABC_2017_10_05.txt/A31UQ59FGOQBBF, Male, 30, FL, 4, Yes, Independent
+
+ABC_2017_10_05.txt/A2TCOV49RNTECD, Female, 29, NC, 5, Yes, Democratic
+
+ABC_2017_10_06.txt/A2NPUPP06POEJ0, Male, 26, IN, 3, Yes, Republican
+
+ABC_2017_10_06.txt/A33XZFIZU249JA, Male, 29, NY, 4, Yes, Green
+
+ABC_2017_10_06.txt/A1JNK18ZXH7FTK, Male, 66, IL, 6, Yes, Independent
+
+ABC_2017_10_06.txt/A2JCE6MD27QA5D, Male, 65, MA, 7, Yes, Democratic
+
+ABC_2017_10_06.txt/ANT979UZZF7N0, Female, 59, WY, 7, Yes, Democratic
+
+ABC_2017_10_07.txt/A2C84POENS2UNY, Female, 37, NC, 5, Yes, Republican
+
+ABC_2017_10_07.txt/AOZ5HHRV4LTJF, Female, 24, NY, 1, Yes, Democratic
+
+ABC_2017_10_07.txt/A3AS4FEB057TRG, Female, 33, TX, 7, Yes, Independent
+
+ABC_2017_10_07.txt/A38OVWILIUQNXR, Female, 30, FL, 5, Yes, Green
+
+ABC_2017_10_07.txt/A3HKZTDVORNEZ, Female, 24, IN, 3, Yes, Independent
+
+FOX_2017_04_05.txt/A3HT6A9N2R5540, Male, 26, TX, 4, Yes, Democratic
+
+FOX_2017_04_05.txt/A31UVMRUFGGJ12, Female, 22, IN, 3, Yes, Green
+
+FOX_2017_04_05.txt/AWZNJH4KB3QOH, Female, 30, CA, 3, No, Independent
+
+FOX_2017_04_05.txt/A3F7GUAEGUGAW1, Male, 25, IN, 3, Yes, Democratic
+
+FOX_2017_04_05.txt/A1FFLQ2D4WTF7H, Female, 31, CA, 2, Yes, Democratic
+
+FOX_2017_04_06.txt/A3HKZTDVORNEZ, Female, 24, IN, 3, Yes, Independent
+
+FOX_2017_04_06.txt/A3F7GUAEGUGAW1, Male, 25, IN, 3, Yes, Democratic
+
+FOX_2017_04_06.txt/A2XSD1WTLSVW1O, Male, 24, CA, 5, Yes, Democratic
+
+FOX_2017_04_06.txt/A37WRUBCVORYH1, Male, 26, MD, 5, Yes, Liberterian
+
+FOX_2017_04_06.txt/A2LX5G9FWLYBIW, Male, 23, FL, 7, Yes, Republican
+
+FOX_2017_05_12.txt/A2UIRHKDQBWJEZ, Male, 25, default, 0, Yes, Democratic
+
+FOX_2017_05_12.txt/A1Y2N49VMVJ7C6, Female, 22, IN, 2, Yes, Republican
+
+FOX_2017_05_12.txt/A2UVS1PDM9QM4Z, Female, 26, IN, 2, Yes, Green
+
+FOX_2017_05_12.txt/A1K19WHZZWON8N, Female, 58, OH, 6, Yes, Republican
+
+FOX_2017_05_12.txt/A2JES6GMR9DNUA, Female, 43, IN, 0, Yes, Independent
+
+FOX_2017_05_15.txt/A31UVMRUFGGJ12, Male, 22, IN, 3, Yes, Green
+
+FOX_2017_05_15.txt/A3TY2K1HBA19PO, Male, 21, MI, 4, Yes, Independent
+
+FOX_2017_05_15.txt/A33XZFIZU249JA, Male, 29, NY, 4, Yes, Green
+
+FOX_2017_05_15.txt/A2X3WNRH7FO4F5, Male, 28, default, 5, Yes, Democratic
+
+FOX_2017_05_15.txt/A8SP23ECDU4F0, Male, 22, VA, 1, Yes, Republican
+
+FOX_2017_05_16.txt/A2OD4LJKPZDL2J, Male, 26, IN, 4, Yes, Democratic
+
+FOX_2017_05_16.txt/A3O8F3194SOXNL, Male, 28, NC, 1, Yes, Independent
+
+FOX_2017_05_16.txt/A22Z6G81DCSXSK, Male, 37, FL, 5, Yes, Republican
+
+FOX_2017_05_16.txt/AF8KEA2127EAN, Female, 31, VA, 0, Yes, Democratic
+
+FOX_2017_05_16.txt/A1H10VPY2MQWN4, Female, 36, TX, 7, Yes, Republican
+
+FOX_2017_10_03.txt/A1VCELFTBZ8PTJ, Male, 33, AL, 1, Yes, Independent
+
+FOX_2017_10_03.txt/A2DJ4RYKLA9M1U, Female, 35, AZ, 7, Yes, Independent
+
+FOX_2017_10_03.txt/A3DMLZASIE8BN6, Male, 30, FL, 6, Yes, Independent
+
+FOX_2017_10_03.txt/AVWOJ5CIC397W, Male, 36, GA, 5, Yes, Independent
+
+FOX_2017_10_03.txt/A3SNSWMNXQEHAO, Female, 25, CA, default, Yes, Republican
+
+FOX_2017_10_05.txt/AHRUMV5C1O0TD, Female, 24, default, 5, Yes, Green
+
+FOX_2017_10_05.txt/A3SNSWMNXQEHAO, Female, 24, WA, default, Yes, Democratic
+
+FOX_2017_10_05.txt/A33XZFIZU249JA, Male, 29, NY, 4, Yes, Green
+
+FOX_2017_10_05.txt/A21ZCKHK1MVE8J, Female, 39, OH, 5, Yes, Democratic
+
+FOX_2017_10_05.txt/A38IIP4LGXBB2C, Female, 22, IN, 1, Yes, Independent
+
+FOX_2017_10_06.txt/A2OD4LJKPZDL2J, Male, 25, AK, 7, Yes, Democratic
+
+FOX_2017_10_06.txt/A4HVKPYLYFRT8, Female, 59, KS, 7, Yes, Independent
+
+FOX_2017_10_06.txt/A3C7HDRFUAA3IJ, Female, 24, FL, 7, Yes, Democratic
+
+FOX_2017_10_06.txt/A2FFCUNQOTTTHI, Male, 35, UT, 1, Yes, Independent
+
+FOX_2017_10_06.txt/ADIH1ENKY9TYM, Female, 23, CO, 0, Yes, Green
+
+NBC_2017_04_05.txt/A1PBRKFHSF1OF8, Female, 32, PA, 3, Yes, Republican
+
+NBC_2017_04_05.txt/AUMBQM1CXWX0, Male, 44, VA, 3, Yes, Democratic
+
+NBC_2017_04_05.txt/A2Q7OYBC1ADCFB, Male, 68, MD, 7, Yes, Democratic
+
+NBC_2017_04_05.txt/AN0UPUNF1MCKP, Female, 42, KY, 7, Yes, Independent
+
+NBC_2017_04_05.txt/A33XZFIZU249JA, Male, 29, NY, 4, Yes, Green
+
+NBC_2017_04_06.txt/A2OD4LJKPZDL2J, Male, 25, NY, 6, Yes, Democratic
+
+NBC_2017_04_06.txt/A2AUMGW4F3G1OF, Female, 30, GA, 2, Yes, Democratic
+
+NBC_2017_04_06.txt/A26SF9CTNKKBYB, Male, 32, default, 4, Yes, Democratic
+
+NBC_2017_04_06.txt/A1NPSBHME4MVX4, Male, 47, MA, 5, Yes, Democratic
+
+NBC_2017_04_06.txt/A1R3467NN29IFS, Female, 25, AL, 0, Yes, Independent
+
+NBC_2017_04_07.txt/A2OD4LJKPZDL2J, Male, 25, CA, 5, Yes, Democratic
+
+NBC_2017_04_07.txt/A25G84GLZMW4L1, Male, 21, NY, default, No, Democratic
+
+NBC_2017_04_07.txt/AP1G770YBECF8, Male, 33, KY, 7, Yes, Democratic
+
+NBC_2017_04_07.txt/AMIX5O7BDFVAO, Male, 44, WI, 7, Yes, Republican
+
+NBC_2017_04_07.txt/A15340BRCER2UO, Male, 38, OH, 5, Yes, Independent
+
+NBC_2017_04_08.txt/A3BJCXAV83TX8O, Male, 38, AK, 7, No, Independent
+
+NBC_2017_04_08.txt/A1Y2N49VMVJ7C6, Female, 22, IN, 2, Yes, Republican
+
+NBC_2017_04_08.txt/A39NNEOC3WAPQR, Female, 26, TN, 7, Yes, Republican
+
+NBC_2017_04_08.txt/APDMDOK5NEBYV, Female, 44, IL, 5, Yes, Republican
+
+NBC_2017_04_08.txt/A3NFCTOOB2D1ZS, Male, 65, FL, 0, Yes, Independent
+
+NBC_2017_04_09.txt/AYVECZ3EZHW1O, default, default, default, default, default, default
+
+NBC_2017_04_09.txt/A1K8D3H6T1B2C8, Male, 24, CA, 4, Yes, Democratic
+
+NBC_2017_04_09.txt/A3C7HDRFUAA3IJ, Female, 24, FL, 7, Yes, Democratic
+
+NBC_2017_04_09.txt/A1N1F009NU2GF7, Female, 34, MS, 5, Yes, Independent
+
+NBC_2017_04_09.txt/A3F7GUAEGUGAW1, Male, 25, IN, 3, Yes, Democratic
+
+NBC_2017_04_10.txt/A2OD4LJKPZDL2J, Male, 26, HI, 5, Yes, Democratic
+
+NBC_2017_04_10.txt/A1YX741QQSMKPS, Male, 60, OH, 5, Yes, Democratic
+
+NBC_2017_04_10.txt/A26T6O5EFR54A9, Female, 49, IL, 1, Yes, Democratic
+
+NBC_2017_04_10.txt/A2SEL33SEOGT20, Male, 32, PA, 0, Yes, Democratic
+
+NBC_2017_04_10.txt/A3F7GUAEGUGAW1, Male, 25, IN, 4, Yes, Democratic
+
+NBC_2017_05_13.txt/AA9AE9ID11LJY, Female, 32, UT, 0, Yes, Independent
+
+NBC_2017_05_13.txt/A2B6PP2KXD19N6, Male, 29, MS, 0, Yes, Independent
+
+NBC_2017_05_13.txt/AYVECZ3EZHW1O, Female, 34, PA, 4, Yes, Liberterian
+
+NBC_2017_05_13.txt/A1CRE2Z623JZ6V, Male, default, WY, 7, Yes, Independent
+
+NBC_2017_05_13.txt/A2DVZVTZOCUUB, Male, 39, TX, 4, Yes, Democratic
+
+NBC_2017_05_16.txt/A2HZID2S9IVQ9G, Female, 57, default, 5, Yes, Republican
+
+NBC_2017_05_16.txt/A2SEL33SEOGT20, Male, 32, PA, 0, Yes, Democratic
+
+NBC_2017_05_16.txt/A2ET1M9UUKJ9KB, Female, 25, CT, 1, Yes, Independent
+
+NBC_2017_05_16.txt/A35RH96H2C01DY, Male, 27, KS, 5, Yes, Democratic
+
+NBC_2017_05_16.txt/AYJ21KR003B23, Female, 53, MO, 2, Yes, Democratic
+
+NBC_2017_09_21.txt/ALDKDKRBR4LXD, Male, 40, VA, 2, Yes, Liberterian
+
+NBC_2017_09_21.txt/A3OZSYUHMCKTPW, Female, 66, KY, 7, Yes, Democratic
+
+NBC_2017_09_21.txt/A10L328WZRZT3J, Male, 20, CA, 6, Yes, Democratic
+
+NBC_2017_09_21.txt/A168K6C94T7S0A, Female, 27, NE, 0, Yes, Democratic
+
+NBC_2017_09_21.txt/A3F7GUAEGUGAW1, Male, 25, IN, 3, Yes, Democratic
+
+NBC_2017_09_23.txt/A38OVWILIUQNXR, Female, 30, FL, 5, Yes, Green
+
+NBC_2017_09_23.txt/A31UVMRUFGGJ12, Female, 24, IN, 3, Yes, Green
+
+NBC_2017_09_23.txt/A3O8F3194SOXNL, Male, 28, NC, 1, Yes, Independent
+
+NBC_2017_09_23.txt/AOCEVYLDLW4O8, Female, 66, IL, 4, Yes, Independent
+
+NBC_2017_09_23.txt/AZB7FTHK3OEYB, Male, 24, AL, 7, Yes, Republican
+
+NBC_2017_09_24.txt/AMA18W8F60Y2J, default, 49, FL, 3, Yes, Democratic
+
+NBC_2017_09_24.txt/A33XZFIZU249JA, Male, 29, NY, 4, Yes, Green
+
+NBC_2017_09_24.txt/A02785981Z0J31YV173X0, Male, 42, IL, 5, Yes, Independent
+
+NBC_2017_09_24.txt/AYVECZ3EZHW1O, default, default, default, default, default, default
+
+NBC_2017_09_24.txt/A161R7U61GXNFC, Male, 30, IN, 4, Yes, Independent
+
+NBC_2017_09_26.txt/A2ZX7580NVWA6I, Female, 40, MI, 5, Yes, Democratic
+
+NBC_2017_09_26.txt/ANSU8XSIM0DIG, Female, 56, KY, 5, Yes, Democratic
+
+NBC_2017_09_26.txt/A2CJ7JLH0HYCH3, Female, 52, AZ, 3, Yes, Liberterian
+
+NBC_2017_09_26.txt/A2RJ6LLZGYIUZS, Male, 59, VT, 7, Yes, Independent
+
+NBC_2017_09_26.txt/A3VPD34C23PQTQ, Male, 33, TX, 4, Yes, Republican
+
+NBC_2017_10_03.txt/A1TQ7UQSSQP7BD, Male, 25, IN, 4, Yes, Republican
+
+NBC_2017_10_03.txt/A33XZFIZU249JA, Male, 29, NY, 4, Yes, Green
+
+NBC_2017_10_03.txt/A3U6772SP0NAPJ, Male, 35, IN, 2, Yes, Independent
+
+NBC_2017_10_03.txt/AKF4J5GAHIA0D, Male, 27, NY, 3, Yes, Republican
+
+NBC_2017_10_03.txt/A3F7GUAEGUGAW1, Male, 25, IN, 3, Yes, Democratic
+
+NBC_2017_10_04.txt/A6NN7XDLH3RON, Female, 24, IN, 1, Yes, Independent
+
+NBC_2017_10_04.txt/A3UYHP1IKCNN7K, Male, 40, AZ, 2, Yes, Independent
+
+NBC_2017_10_04.txt/A9N9Y3H7FCWEF, Male, 30, NY, 1, Yes, Independent
+
+NBC_2017_10_04.txt/A3F7GUAEGUGAW1, Male, 25, IN, 3, Yes, Democratic
+
+NBC_2017_10_04.txt/A29V2XPA9H2NAN, Female, 30, OH, 5, No, Independent
+
+NBC_2017_10_05.txt/A2V64IVUUIFL68, Female, 31, FL, 4, Yes, Republican
+
+NBC_2017_10_05.txt/A2JO52BHJMCRD8, Male, 27, AK, 5, Yes, Democratic
+
+NBC_2017_10_05.txt/A3F7GUAEGUGAW1, Male, 25, IN, default, Yes, Democratic
+
+NBC_2017_10_05.txt/A2P0T88FJMZXUM, Male, 36, TX, 4, Yes, Independent
+
+NBC_2017_10_05.txt/ABL3H3O3BI8ZD, Male, 27, NY, 2, Yes, Republican
+
+NBC_2017_10_06.txt/AMA18W8F60Y2J, Female, 49, FL, 3, Yes, Democratic
+
+NBC_2017_10_06.txt/A3363WDRUW4H1M, Female, 23, FL, 2, Yes, Democratic
+
+NBC_2017_10_06.txt/A15P5OMPCDYGUE, Female, 21, AZ, 2, Yes, Democratic
+
+NBC_2017_10_06.txt/A2W8XV3TQEJK7G, Male, 51, GA, 1, Yes, Republican
+
+NBC_2017_10_06.txt/AYVECZ3EZHW1O, Female, 34, PA, 4, Yes, Liberterian
+
+NBC_2017_10_07.txt/A1C8FN01981A69, Male, 36, MO, 5, Yes, Independent
+
+NBC_2017_10_07.txt/A3BJCXAV83TX8O, Male, 38, AK, 7, No, Independent
+
+NBC_2017_10_07.txt/A3HKZTDVORNEZ, Female, 24, IN, 4, Yes, Independent
+
+NBC_2017_10_07.txt/A3ST4JGLAGZG3A, Female, 26, GA, 3, Yes, Democratic
+
+NBC_2017_10_07.txt/AKHTVKAQY4YUS, Male, 28, IL, 0, Yes, Independent
+
+FOX_2017_09_20.txt/A3F7GUAEGUGAW1, Male, 25, IN, 3, Yes, Democratic
+
+FOX_2017_09_20.txt/A2G6ISFMGZWCQN, Male, 30, PA, 0, Yes, Republican
+
+FOX_2017_09_20.txt/A3BJCXAV83TX8O, Male, 38, AK, 7, No, Independent
+
+FOX_2017_09_20.txt/A1E6XBV7FDHI6M, Male, 26, NY, 2, Yes, Democratic
+
+FOX_2017_09_20.txt/A2CP6716BCS8UI, Male, 37, CA, 3, Yes, Independent
+
+FOX_2017_09_21.txt/A3J8BYN2DZ4VJ6, Female, 30, IL, 7, Yes, Independent
+
+FOX_2017_09_21.txt/A1USG4DG6ON0PY, Male, 32, FL, 3, Yes, Independent
+
+FOX_2017_09_21.txt/A2EJLKLPXT8GDI, Male, 41, CA, 5, Yes, Independent
+
+FOX_2017_09_21.txt/A3F7GUAEGUGAW1, Male, 25, IN, 3, Yes, Democratic
+
+FOX_2017_09_21.txt/A3NWB7MZLQP0TK, Female, 52, WI, 7, Yes, Democratic
+
+FOX_2017_09_22.txt/A1SKNYIVNDZ98Y, default, 28, OR, 3, Yes, Independent
+
+FOX_2017_09_22.txt/A200H4TX468LE, Female, 41, OH, 5, Yes, Republican
+
+FOX_2017_09_22.txt/A1OK757V9JDQHB, Female, 24, PA, 7, No, Independent
+
+FOX_2017_09_22.txt/A2Y1ORULU9ITOH, Female, 48, CT, 7, Yes, Democratic
+
+FOX_2017_09_22.txt/A2V8LLZRTOP79S, Female, 25, DE, 4, Yes, Independent
+
+FOX_2017_09_25.txt/AVC955GXM8VUY, default, default, default, default, default, default
+
+FOX_2017_09_25.txt/ATQD23E8ESFSI, Male, 36, LA, 7, Yes, Independent
+
+FOX_2017_09_25.txt/A3TAW1SSZN1YX5, Female, 39, WA, 2, Yes, Democratic
+
+FOX_2017_09_25.txt/A2OEBEBY1V0LQJ, Female, 27, CA, 5, Yes, Democratic
+
+FOX_2017_09_25.txt/A2UVS1PDM9QM4Z, Female, 26, IN, 3, Yes, Green
+
+ABC_2013_04_16.txt/A2XSD1WTLSVW1O, Male, 24, CA, 7, Yes, Democratic
+
+ABC_2013_04_17.txt/AF0JQRC65CQGB, Female, 29, SC, 1, Yes, Independent
+
+ABC_2013_04_17.txt/A2XD2SHHJR6WR6, Female, 37, CA, 1, Yes, Independent
+
+ABC_2013_04_17.txt/A31BHRW6QKVBQ9, Male, 23, AR, 5, Yes, Independent
+
+ABC_2013_04_17.txt/A2151LTQ3NA15U, Female, 22, UT, 2, Yes, Republican
+
+ABC_2013_04_17.txt/ATQD23E8ESFSI, Male, 36, LA, 7, Yes, Independent
+
+ABC_2013_04_18.txt/A2DG3J43DRG8ME, Female, 36, OH, 2, Yes, Independent
+
+ABC_2013_04_18.txt/AZQ85CCQBEG0X, Female, 66, VA, 2, Yes, Independent
+
+ABC_2013_04_18.txt/A55NIX2OSP9C, Female, 26, default, 3, No, Independent
+
+ABC_2013_04_18.txt/A2QIZ31TMHU0GD, Male, 25, TX, 4, Yes, Democratic
+
+ABC_2013_04_18.txt/A3B06XLY8OD1XN, Female, default, FL, 7, Yes, Democratic
+
+ABC_2013_04_19.txt/A2V8LLZRTOP79S, Female, 25, CA, 5, Yes, Republican
+
+ABC_2013_04_19.txt/A2CFQSHT1TCCRB, Female, 25, FL, 3, Yes, Constitution
+
+ABC_2013_04_19.txt/A3GU00DMBON7YO, Female, 26, WA, 0, Yes, Democratic
+
+ABC_2013_04_19.txt/A3SNSWMNXQEHAO, Female, 24, WA, 7, Yes, Democratic
+
+ABC_2013_04_19.txt/A2OD4LJKPZDL2J, Male, 24, GA, 6, Yes, Democratic
+
+ABC_2013_04_20.txt/AHRUMV5C1O0TD, Female, 24, IN, 3, Yes, Green
+
+ABC_2013_04_20.txt/A2UVS1PDM9QM4Z, Female, 25, IN, 3, default, Green
+
+ABC_2013_04_20.txt/A1WUZOLVPEXOLE, Male, 32, IL, 3, Yes, Democratic
+
+ABC_2013_04_20.txt/A1TQ7UQSSQP7BD, Male, 26, IN, 6, Yes, Republican
+
+ABC_2013_04_20.txt/A1FFLQ2D4WTF7H, Female, 31, CA, 2, Yes, Democratic
+
+ABC_2013_04_21.txt/A3BPT73NGS3Y8I, Male, 26, PA, 7, Yes, Independent
+
+ABC_2013_04_21.txt/A3HT6A9N2R5540, Male, 26, FL, 3, Yes, Republican
+
+ABC_2013_04_21.txt/A3SNSWMNXQEHAO, Female, 24, WA, 7, Yes, Democratic
+
+ABC_2013_04_21.txt/A1Y2N49VMVJ7C6, Female, 22, IN, 3, Yes, Republican
+
+ABC_2013_04_21.txt/AS7D4MNIH56ND, Male, 20, NY, default, Yes, Democratic
+
+ABC_2013_05_20.txt/A36QWE9V1NHLRD, Female, 22, PA, 0, Yes, Independent
+
+ABC_2013_05_20.txt/A3S46DPHSBVU17, Female, 29, AL, 5, Yes, Democratic
+
+ABC_2013_05_20.txt/A2CP6716BCS8UI, Male, 37, CA, 3, Yes, Independent
+
+ABC_2013_05_20.txt/A3CV1VK8QP1SUN, Male, 23, NJ, 7, Yes, Independent
+
+ABC_2013_05_20.txt/A3SNSWMNXQEHAO, Female, 25, CA, 7, Yes, Democratic
+
+ABC_2013_05_21.txt/A2CFQSHT1TCCRB, Male, 34, IL, 5, Yes, Republican
+
+ABC_2013_05_21.txt/A31UVMRUFGGJ12, Male, 22, IN, 2, Yes, Liberterian
+
+ABC_2013_05_21.txt/A3UYHP1IKCNN7K, Male, 40, AZ, 5, Yes, Republican
+
+ABC_2013_05_21.txt/A2UVS1PDM9QM4Z, Female, 26, IN, 3, Yes, Green
+
+ABC_2013_05_21.txt/AS7D4MNIH56ND, Male, 20, NY, 5, Yes, Democratic
+
+ABC_2013_05_22.txt/A2V8LLZRTOP79S, Female, 24, DE, 3, Yes, Republican
+
+ABC_2013_05_22.txt/A31UVMRUFGGJ12, Male, 21, IN, 4, Yes, Liberterian
+
+ABC_2013_05_22.txt/AOZ5HHRV4LTJF, Female, 24, NY, 2, Yes, Democratic
+
+ABC_2013_05_22.txt/A3SNSWMNXQEHAO, Female, 24, WA, 7, Yes, Democratic
+
+ABC_2013_05_22.txt/A2UVS1PDM9QM4Z, Female, 26, IN, 4, Yes, Green
+
+ABC_2013_05_23.txt/A2CFQSHT1TCCRB, Female, 35, IA, 4, No, Independent
+
+ABC_2013_05_23.txt/A11OGIKK5UL6QP, Male, 43, MN, 2, Yes, Democratic
+
+ABC_2013_05_23.txt/AHRUMV5C1O0TD, Female, 26, IN, 5, Yes, Green
+
+ABC_2013_05_23.txt/AOZ5HHRV4LTJF, Female, 24, NY, 2, Yes, Democratic
+
+ABC_2013_05_23.txt/A3SNSWMNXQEHAO, Female, 24, WA, 7, Yes, Democratic
+
+ABC_2013_05_24.txt/A25N802S4J344I, Male, 65, MN, 7, Yes, Democratic
+
+ABC_2013_05_24.txt/A2DC6TG86OSCRK, Female, 46, MO, 2, Yes, Democratic
+
+ABC_2013_05_24.txt/A1KJVR0GYI1QNX, Male, 53, SC, 7, Yes, Independent
+
+ABC_2013_05_24.txt/A1THXHPVWVEWNZ, Male, 26, CA, 1, Yes, Independent
+
+ABC_2013_05_24.txt/A35GYX767C618R, Male, 49, NY, 6, Yes, Democratic
+
+ABC_2013_05_25.txt/A2UVS1PDM9QM4Z, Male, 21, CO, 1, Yes, Green
+
+ABC_2013_05_25.txt/A2V8LLZRTOP79S, Female, 25, GU, 6, Yes, Independent
+
+ABC_2013_05_25.txt/A14R4R8CKF1U4R, Female, 25, TN, 2, Yes, Independent
+
+ABC_2013_05_25.txt/A2OD4LJKPZDL2J, Male, 25, CA, 7, Yes, Democratic
+
+ABC_2013_05_25.txt/A3SNSWMNXQEHAO, Female, 24, WA, 7, Yes, Democratic
+
+ABC_2013_06_11.txt/A2V8LLZRTOP79S, Female, 26, CA, 4, Yes, Republican
+
+ABC_2013_06_11.txt/A31UVMRUFGGJ12, Female, 21, IN, 3, Yes, Green
+
+ABC_2013_06_11.txt/A1KJVR0GYI1QNX, Male, 53, SC, 7, Yes, Independent
+
+ABC_2013_06_11.txt/A2OD4LJKPZDL2J, Male, 23, IL, 6, Yes, Democratic
+
+ABC_2013_06_11.txt/A3SNSWMNXQEHAO, Female, 24, WA, 7, Yes, Democratic
+
+NBC_2013_05_21.txt/A2CFQSHT1TCCRB, Female, 24, IL, 6, Yes, Democratic
+
+NBC_2013_05_21.txt/A31UVMRUFGGJ12, Male, 23, IN, 2, Yes, Republican
+
+NBC_2013_05_21.txt/A2AH6T1QNJHWQE, Male, 24, IN, 3, Yes, Green
+
+NBC_2013_05_21.txt/A1Y2N49VMVJ7C6, Female, 22, IN, 3, Yes, Republican
+
+NBC_2013_05_21.txt/A3SNSWMNXQEHAO, Female, 24, WA, 7, Yes, Democratic
+
+NBC_2013_05_20.txt/A2IIFLLL6039K0, Male, 34, SC, 0, Yes, Independent
+
+NBC_2013_05_20.txt/A2XSD1WTLSVW1O, Male, 24, CA, 5, Yes, Democratic
+
+NBC_2013_05_20.txt/AHRUMV5C1O0TD, Male, 26, IN, 4, Yes, Independent
+
+NBC_2013_05_20.txt/A2CFQSHT1TCCRB, Male, 22, GA, 1, Yes, Green
+
+NBC_2013_05_20.txt/AOZ5HHRV4LTJF, Female, 24, NY, 2, Yes, Democratic
+
+NBC_2013_05_22.txt/A2M6442SG0H46I, Male, 30, TX, 5, No, Independent
+
+NBC_2013_06_10.txt/A1CE2XPYCDRHVZ, Female, default, NY, 7, Yes, Democratic
+
+NBC_2013_06_11.txt/A3R21SX5YC8M77, Male, 49, NC, 5, Yes, Republican
+
+NBC_2013_06_12.txt/A35GYX767C618R, Male, 49, NY, 6, Yes, Democratic
+
+NBC_2013_06_12.txt/AQFJQRCUX4BO8, Male, 32, CT, 7, Yes, Democratic
+
+NBC_2013_06_12.txt/A2V8LLZRTOP79S, Female, 25, CA, default, Yes, Independent
+
+NBC_2013_06_12.txt/A2W5Q0IVJUS7Y6, Male, 66, OH, 0, Yes, Republican
+
+NBC_2013_06_12.txt/A2OD4LJKPZDL2J, Male, 25, CA, 5, Yes, Democratic
+
+NBC_2013_06_14.txt/A1MYLQQL8BBOYT, Male, 37, CT, 5, Yes, Independent
+
+NBC_2013_06_14.txt/A2J0ZE90L43LC2, Male, 35, MO, 5, No, Democratic
+
+NBC_2013_06_14.txt/A2V8LLZRTOP79S, Female, 25, CA, 4, Yes, Republican
+
+NBC_2013_06_14.txt/A2CFQSHT1TCCRB, Male, 36, IL, 4, Yes, Democratic
+
+NBC_2013_06_14.txt/A31UVMRUFGGJ12, Male, 21, IN, 2, Yes, Green
+
+ABC_2013_06_13.txt/A2B153AHPWHLH1, Male, 51, FL, 7, Yes, Republican
+
+ABC_2013_06_13.txt/A13XZ80CWRKPAX, Male, 48, OH, 4, Yes, Independent
+
+ABC_2013_06_13.txt/A3AAVWQO4NE6LO, Female, 30, KY, 5, Yes, Liberterian
+
+ABC_2013_06_13.txt/A2V8LLZRTOP79S, Female, 27, CO, 3, Yes, Independent
+
+ABC_2013_06_13.txt/A31UVMRUFGGJ12, Female, 20, IN, 1, Yes, Liberterian
+
+ABC_2013_08_23.txt/ACARVFV9LXVAA, Female, 44, MA, 7, No, Independent
+
+ABC_2013_08_23.txt/A1GNF5XL4VHG06, Female, 33, TX, 0, No, Liberterian
+
+ABC_2013_08_23.txt/A2CFQSHT1TCCRB, Male, 35, IN, 2, Yes, Independent
+
+ABC_2013_08_23.txt/A2V8LLZRTOP79S, Female, 25, CA, default, Yes, Independent
+
+ABC_2013_08_23.txt/A1HX6QFI3E22XF, Female, 25, OR, 3, Yes, Liberterian
+
+ABC_2013_08_24.txt/A36MKJ6Z5JW64B, Female, 50, SC, 5, Yes, Republican
+
+ABC_2013_08_24.txt/A2V8LLZRTOP79S, Female, 24, CO, 3, Yes, Republican
+
+ABC_2013_08_24.txt/A2CFQSHT1TCCRB, Female, 42, HI, 4, Yes, Liberterian
+
+ABC_2013_08_24.txt/A1WUZOLVPEXOLE, Male, 32, IL, 2, Yes, Republican
+
+ABC_2013_08_24.txt/A2OD4LJKPZDL2J, Male, 20, IN, 6, Yes, Democratic
+
+ABC_2013_08_26.txt/A14M2EERU7E8KD, Female, 30, MI, 6, Yes, Independent
+
+ABC_2013_08_27.txt/A2CFQSHT1TCCRB, Male, 26, CA, 3, Yes, Democratic
+
+ABC_2013_08_27.txt/A2V8LLZRTOP79S, Female, 25, CA, 5, Yes, Independent
+
+ABC_2013_08_27.txt/A3HT6A9N2R5540, Male, default, FL, 4, Yes, Democratic
+
+ABC_2013_08_27.txt/A2OD4LJKPZDL2J, Male, 25, IN, 7, Yes, Democratic
+
+ABC_2013_08_27.txt/A31UVMRUFGGJ12, Female, 22, IN, 2, Yes, Liberterian
+
+ABC_2013_08_28.txt/A2CFQSHT1TCCRB, Male, 33, AZ, default, Yes, Democratic
+
+ABC_2013_08_28.txt/A2V8LLZRTOP79S, Female, 25, CA, 4, Yes, Independent
+
+ABC_2013_08_28.txt/A2OD4LJKPZDL2J, Male, 26, IN, 5, Yes, Democratic
+
+ABC_2013_08_28.txt/AHRUMV5C1O0TD, Female, 27, IN, 2, Yes, Green
+
+ABC_2013_08_28.txt/A3HT6A9N2R5540, Male, 26, FL, 5, Yes, Liberterian
+
+NBC_2013_06_10.txt/A1NF6PELRKACS9, Male, 59, CA, 2, Yes, Republican
+
+NBC_2013_06_10.txt/A2N4MPQN2RMOB1, Female, 36, NC, 3, Yes, Liberterian
+
+NBC_2013_06_10.txt/A2V8LLZRTOP79S, Female, 25, CA, 4, Yes, Republican
+
+NBC_2013_06_10.txt/A1F8ZAE0P2RA8O, Female, 25, CA, 4, Yes, Democratic
+
+ABC_2013_08_26.txt/A1NF6PELRKACS9, Male, 58, CA, 2, Yes, Republican
+
+ABC_2013_08_26.txt/AZBPNAX91NXXC, Female, 50, FL, 1, Yes, Republican
+
+ABC_2013_08_26.txt/A2V8LLZRTOP79S, Female, 26, CO, 3, Yes, Democratic
+
+ABC_2013_08_26.txt/A3P24DLGZPK4WM, Male, 27, NY, 4, Yes, Independent
+
+NBC_2013_06_11.txt/A2V8LLZRTOP79S, Female, 25, CA, 4, Yes, Republican
+
+NBC_2013_06_11.txt/A1JN13098RIE78, Female, 48, CA, 2, Yes, Democratic
+
+NBC_2013_06_11.txt/AAO1SN0K3USCH, Female, 46, TX, 7, Yes, Independent
+
+NBC_2013_06_11.txt/A2KANCG6BVWYRE, Female, 28, CA, 2, No, default
+
+NBC_2013_05_22.txt/A2V8LLZRTOP79S, Female, 25, CA, 4, Yes, Republican
+
+NBC_2013_05_22.txt/A2UVS1PDM9QM4Z, Male, 24, CA, 2, Yes, Green
+
+NBC_2013_05_22.txt/A3SNSWMNXQEHAO, Female, 25, CA, 7, Yes, Independent
+
+NBC_2013_05_22.txt/A1F8ZAE0P2RA8O, Female, 25, CA, 4, Yes, Democratic
+
+ABC_2013_04_16.txt/AS7D4MNIH56ND, Male, 20, NY, 4, Yes, Democratic
+
+ABC_2013_04_16.txt/A2QIZ31TMHU0GD, Female, 24, TX, 4, Yes, Democratic
+
+ABC_2013_04_16.txt/AHRUMV5C1O0TD, Male, 26, IN, 4, Yes, Independent
+
+ABC_2013_04_16.txt/A1EY7WONSYGBVY, Male, 29, TX, 3, Yes, Democratic
+
+NBC_2013_04_16.txt/AOZ5HHRV4LTJF, Female, 24, NY, 1, Yes, Democratic
+
+NBC_2013_04_16.txt/A24YK0MTFM2TRL, Male, 43, PA, 5, Yes, Democratic
+
+NBC_2013_04_16.txt/A3SNSWMNXQEHAO, Female, 24, WA, 7, Yes, Democratic
+
+NBC_2013_04_16.txt/A1DUH3RLI00YQM, Male, 72, FL, 3, Yes, Democratic
+
+NBC_2013_04_17.txt/A1Y2N49VMVJ7C6, Female, 22, IN, 2, Yes, Republican
+
+NBC_2013_04_17.txt/A2VI55LKT5L4KB, Male, 39, CA, 7, Yes, Democratic
+
+NBC_2013_04_17.txt/A2JO52BHJMCRD8, Male, 27, AK, 7, Yes, Liberterian
+
+NBC_2013_04_17.txt/A2HJV8WYV7V4CA, Male, 53, OH, 1, Yes, Independent
+
+NBC_2013_05_23.txt/AOZ5HHRV4LTJF, Female, 24, NY, 1, Yes, Democratic
+
+NBC_2013_05_23.txt/A3SNSWMNXQEHAO, Female, 24, WA, 7, Yes, Democratic
+
+NBC_2013_05_23.txt/A2089GGBHBLVSQ, Male, 37, CA, 6, Yes, Independent
+
+NBC_2013_05_23.txt/A3PO4C1WA2FQHW, Female, 38, CA, 2, Yes, Republican
+
+NBC_2013_05_24.txt/A3HMDGRGC5JB7E, Female, 32, IL, 3, Yes, Republican
+
+NBC_2013_05_24.txt/A3HT6A9N2R5540, Male, 25, FL, 5, Yes, Liberterian
+
+NBC_2013_05_24.txt/A2OD4LJKPZDL2J, Male, 20, DC, 6, Yes, Democratic
+
+NBC_2013_05_24.txt/A31UVMRUFGGJ12, Female, 24, IN, 2, Yes, Liberterian
+
+NBC_2013_05_24.txt/AHRUMV5C1O0TD, Female, 29, GA, 3, Yes, Republican
+
+NBC_2013_05_25.txt/AHRUMV5C1O0TD, Female, 28, IN, 4, Yes, Republican
+
+NBC_2013_05_25.txt/A31UVMRUFGGJ12, Male, 22, IN, 2, Yes, Liberterian
+
+NBC_2013_05_25.txt/A2UVS1PDM9QM4Z, Female, 25, IN, 3, Yes, Green
+
+NBC_2013_05_25.txt/A3SNSWMNXQEHAO, Female, 24, WA, 7, Yes, Democratic
+
+NBC_2013_05_25.txt/A285CCYAQUKXJM, Female, 19, NY, 4, Yes, Independent
+
+NBC_2013_08_23.txt/A2OD4LJKPZDL2J, Male, 25, IN, 6, Yes, Democratic
+
+NBC_2013_08_23.txt/AHRUMV5C1O0TD, Female, 25, IN, 3, Yes, Democratic
+
+NBC_2013_08_23.txt/A2NPUPP06POEJ0, Male, 30, IN, 4, default, default
+
+NBC_2013_08_23.txt/AOZ5HHRV4LTJF, Female, 24, NY, 2, default, Democratic
+
+NBC_2013_08_23.txt/A26GLRAUY9JJYP, Male, 28, OH, 0, Yes, Independent
+
+NBC_2013_08_24.txt/A2OD4LJKPZDL2J, Male, 27, WA, 7, Yes, Democratic
+
+NBC_2013_08_24.txt/A31UVMRUFGGJ12, Male, 23, IN, 2, Yes, Liberterian
+
+NBC_2013_08_24.txt/AHRUMV5C1O0TD, Female, 23, IN, 3, Yes, Republican
+
+NBC_2013_08_24.txt/A1LHSOH23WKNJI, Female, 23, WI, 0, Yes, Democratic
+
+NBC_2013_08_24.txt/AOZ5HHRV4LTJF, Female, 24, NY, 1, Yes, Democratic
+
+NBC_2013_08_25.txt/AMGGLXGMFWEN2, default, default, default, default, default, default
+
+NBC_2013_08_25.txt/A2OD4LJKPZDL2J, Male, 25, IN, 7, Yes, Democratic
+
+NBC_2013_08_25.txt/AHRUMV5C1O0TD, Female, 22, IN, 4, Yes, Constitution
+
+NBC_2013_08_25.txt/A3F7GUAEGUGAW1, Male, 25, IN, 4, Yes, Republican
+
+NBC_2013_08_25.txt/A2UVS1PDM9QM4Z, Female, 25, IN, 3, Yes, Green
+
+NBC_2013_08_27.txt/AHRUMV5C1O0TD, Female, 26, GA, 4, Yes, Republican
+
+NBC_2013_08_27.txt/A2UVS1PDM9QM4Z, Female, 26, IN, 3, Yes, Green
+
+NBC_2013_08_27.txt/AOZ5HHRV4LTJF, Female, 24, NY, 1, Yes, Democratic
+
+NBC_2013_08_27.txt/A1PNAEMX3S1M2, Male, 26, PA, 4, Yes, Democratic
+
+NBC_2013_08_27.txt/A1SZUT6YRKQEQA, Female, 26, MO, 3, Yes, Independent
+
+NBC_2013_08_28.txt/A3HT6A9N2R5540, Male, 25, GA, 5, Yes, Republican
+
+NBC_2013_08_28.txt/AHRUMV5C1O0TD, Female, 32, default, 3, Yes, Republican
+
+NBC_2013_08_28.txt/A2UVS1PDM9QM4Z, Female, 25, IN, 5, Yes, Green
+
+NBC_2013_08_28.txt/AOZ5HHRV4LTJF, Female, 24, NY, 1, Yes, Democratic
+
+NBC_2013_08_28.txt/A3SNSWMNXQEHAO, Female, 24, WA, 7, Yes, Democratic
+
+FOX_2017_04_04.txt/A3F7GUAEGUGAW1, Male, 25, IN, 4, Yes, Democratic
+
+FOX_2017_04_04.txt/AS7D4MNIH56ND, Male, 20, NY, 5, Yes, Democratic
+
+FOX_2017_04_04.txt/A3ENCEBEEQ62DV, Male, 34, WA, 5, Yes, Independent
+
+FOX_2017_04_04.txt/A39P7K4TGGHBUY, Female, 36, SC, 2, No, Independent
+
+FOX_2017_04_04.txt/A2NUVRQJIRFQTC, Female, 20, TX, 1, Yes, Independent
+
+FOX_2017_04_08.txt/AS7D4MNIH56ND, Male, 20, NY, 4, Yes, Democratic
+
+FOX_2017_04_08.txt/A2GF7PYHT21U3X, Female, 21, MO, 4, Yes, Democratic
+
+FOX_2017_04_08.txt/A316NKC00CTLK3, Female, 22, WV, 3, Yes, Democratic
+
+FOX_2017_04_08.txt/A2S99CTMILB4HK, Female, 19, RI, 0, No, Independent
+
+FOX_2017_04_08.txt/AHRUMV5C1O0TD, Male, 26, IN, 4, Yes, Independent
+
+FOX_2017_05_13.txt/A2KYM04IWQEJ2V, Male, 34, FL, 7, Yes, Democratic
+
+FOX_2017_05_13.txt/A3FHUXXIPMWVFQ, Female, 29, SC, 2, Yes, Republican
+
+FOX_2017_05_13.txt/A3F7GUAEGUGAW1, Male, 25, IN, 3, Yes, Democratic
+
+FOX_2017_05_13.txt/AS7D4MNIH56ND, Male, 20, NY, 4, Yes, Democratic
+
+FOX_2017_05_13.txt/A3ENCEBEEQ62DV, Male, 34, WA, 5, Yes, Independent
+
+FOX_2017_05_14.txt/A39P7K4TGGHBUY, Female, 36, SC, 2, Yes, Independent
+
+FOX_2017_05_14.txt/A3F7GUAEGUGAW1, Male, 25, IN, 4, Yes, Democratic
+
+FOX_2017_05_14.txt/AS7D4MNIH56ND, Male, 20, NY, 5, Yes, Democratic
+
+FOX_2017_05_14.txt/A3CN2HTK1LVA53, Female, 41, FL, 0, Yes, Republican
+
+FOX_2017_05_14.txt/A3J60DY0UM6A0C, Male, 43, NY, 2, Yes, Democratic
+
+FOX_2017_09_23.txt/AXN0AGZIJCUK4, Female, 29, NY, 6, default, Independent
+
+FOX_2017_09_23.txt/AUJI7VMEX22LT, Female, 32, GA, 7, Yes, Democratic
+
+FOX_2017_09_23.txt/A39P7K4TGGHBUY, Female, 36, SC, 2, No, Independent
+
+FOX_2017_09_23.txt/A3F7GUAEGUGAW1, Male, 25, IN, 5, Yes, Democratic
+
+FOX_2017_09_23.txt/AS7D4MNIH56ND, Male, 20, NY, 5, Yes, Democratic
+
+FOX_2017_09_24.txt/A2N38DU87E84HM, Female, 20, TX, 7, Yes, Democratic
+
+FOX_2017_09_24.txt/A3F7GUAEGUGAW1, Male, 25, IN, default, Yes, Democratic
+
+FOX_2017_09_24.txt/AZB7FTHK3OEYB, Male, 25, AZ, 4, Yes, Green
+
+FOX_2017_09_24.txt/A39P7K4TGGHBUY, Female, 36, SC, 2, No, Independent
+
+FOX_2017_09_24.txt/A8GWYS9O8FUEK, Male, 31, CA, 6, Yes, Republican
+
+FOX_2017_04_09.txt/A39P7K4TGGHBUY, Female, 36, SC, 2, No, Independent
+
+FOX_2017_04_09.txt/A3F7GUAEGUGAW1, Male, 25, IN, 4, Yes, Democratic
+
+FOX_2017_04_09.txt/A3BRZ54YCHFJGL, Female, 70, MO, 2, Yes, Democratic
+
+FOX_2017_04_09.txt/AS7D4MNIH56ND, Male, 21, NY, 5, Yes, Democratic
+
+FOX_2017_04_09.txt/A37YVU9C0857UP, Female, 41, CO, 1, Yes, Independent
+
+NBC_2013_04_18.txt/AS7D4MNIH56ND, Male, 20, NY, 5, Yes, Democratic
+
+NBC_2013_04_18.txt/A25J513N1UILIV, Male, 28, KS, 4, Yes, Republican
+
+NBC_2013_04_18.txt/A3FCWK31S9H1SM, Male, 21, GA, 4, No, Republican
+
+NBC_2013_04_18.txt/A2AY6EZF3P3T6A, Male, 28, NJ, 0, Yes, Independent
+
+NBC_2013_04_18.txt/A2ASDRU6OOGTH6, Male, 30, IN, 3, Yes, Democratic
+
+NBC_2013_04_19.txt/A3CAVJZFJ74B37, Male, 25, FL, 7, Yes, Green
+
+NBC_2013_04_19.txt/A1YSWWCZDQSVBJ, Female, 28, LA, 2, Yes, Democratic
+
+NBC_2013_04_19.txt/A3F7GUAEGUGAW1, Male, 25, IN, 3, Yes, Democratic
+
+NBC_2013_04_19.txt/AS7D4MNIH56ND, Male, 20, NY, 5, Yes, Democratic
+
+NBC_2013_04_19.txt/A39P7K4TGGHBUY, Female, 36, SC, 2, No, Independent
+
+NBC_2013_04_21.txt/AS7D4MNIH56ND, Male, 20, NY, 5, Yes, Democratic
+
+NBC_2013_04_21.txt/ATQD23E8ESFSI, Male, 36, LA, 7, Yes, Independent
+
+NBC_2013_04_21.txt/A3LLXN0CPK7N5B, Male, 26, SC, 5, Yes, Democratic
+
+NBC_2013_04_21.txt/A1P93UEIZKA5DC, Female, 23, MD, 1, Yes, Democratic
+
+NBC_2013_04_21.txt/A2V8LLZRTOP79S, Female, 25, CA, 4, Yes, Independent
+
+NBC_2017_09_22.txt/A3QHZ0AQQ5EJSH, Male, 28, OR, 1, Yes, Independent
+
+NBC_2017_09_22.txt/A5TI9UQEPLNWI, Male, 43, WA, 3, Yes, Democratic
+
+NBC_2017_09_22.txt/A3F7GUAEGUGAW1, Male, 26, IN, 3, Yes, Democratic
+
+NBC_2017_09_22.txt/A39P7K4TGGHBUY, Female, 36, default, 2, No, Independent
+
+NBC_2017_09_22.txt/AS7D4MNIH56ND, Male, 20, NY, 5, Yes, Democratic
+
+NBC_2017_09_25.txt/AXN0AGZIJCUK4, Female, 29, NY, 6, No, Independent
+
+NBC_2017_09_25.txt/A3F7GUAEGUGAW1, Male, 25, IN, 3, Yes, Democratic
+
+NBC_2017_09_25.txt/AS7D4MNIH56ND, Male, 20, NY, 5, Yes, Democratic
+
+NBC_2017_09_25.txt/A3UPF0XS7GW149, Male, 46, FL, 7, Yes, Independent
+
+NBC_2017_09_25.txt/A3539MMJRIEW89, Male, 26, CA, 4, Yes, Democratic
+
+FOX_2013_06_09.txt/A15JI9ZIILGCAK, Male, 30, FL, 2, Yes, Democratic
+
+FOX_2013_06_09.txt/A2VNR6984SDFGQ, Female, 43, PA, 2, Yes, Republican
+
+FOX_2013_06_09.txt/A2TCOV49RNTECD, Female, 29, NC, 4, Yes, Democratic
+
+FOX_2013_06_10.txt/A1DVNAQ217BZJF, Female, 58, VT, 7, Yes, Democratic
+
+FOX_2013_06_10.txt/ART2B51OIA2V3, Male, 21, NC, 5, Yes, Independent
+
+FOX_2013_06_10.txt/AIPM5QXUKJAZ, Male, 24, UT, 0, Yes, Independent
+
+FOX_2013_06_11.txt/AV8O84CPC5TNI, Female, 29, SC, 7, Yes, Republican
+
+FOX_2013_06_11.txt/A2482SLAY120J2, Male, 64, CA, 5, No, Republican
+
+FOX_2013_06_11.txt/AR62AZIQLYARV, Male, 37, CA, 0, Yes, Democratic
+
+FOX_2013_06_11.txt/A1H4RXFUNZGXIT, Female, 51, SC, 3, Yes, Democratic
+
+FOX_2013_06_11.txt/A2SPL0R7RBIHNX, Female, 30, NE, 2, Yes, Independent
+
+FOX_2013_06_12.txt/A8TIL9U6YHG5, Male, 30, NY, 3, Yes, Republican
+
+FOX_2013_06_12.txt/AFI4N8H1DLQHF, Female, 51, NJ, 2, Yes, Liberterian
+
+FOX_2013_06_12.txt/A2Z8SR1UU09HO5, Female, 50, NC, 7, Yes, Democratic
+
+FOX_2013_06_12.txt/AWVFCAK55396M, Male, 41, NY, default, Yes, Independent
+
+FOX_2013_06_12.txt/APBL0D4SR9TRG, Male, 44, MO, 7, Yes, Independent
+
+FOX_2013_06_13.txt/A4ACN0KN920QQ, Male, 45, OR, 3, Yes, Republican
+
+FOX_2013_06_13.txt/AHKH0JN22XQWL, Male, 19, AZ, 0, Yes, Independent
+
+FOX_2013_06_13.txt/A1WJP4CYGSTHAU, Male, 41, MI, 1, Yes, Democratic
+
+FOX_2013_06_13.txt/A2R7R4QKZ1KUIZ, Male, 30, LA, 1, Yes, Independent
+
+FOX_2013_06_14.txt/A15YTDVEQ4N2RZ, Male, 33, VA, 3, Yes, Democratic
+
+FOX_2013_06_14.txt/A2URIXUC02YDNI, Male, 40, OR, 7, Yes, Republican
+
+FOX_2013_06_14.txt/A5AVLI57L6BG3, Female, 51, ME, 7, Yes, Democratic
+
+FOX_2013_06_14.txt/A1IW8P2O4CK670, Male, 37, NC, 7, Yes, Democratic
+
+FOX_2013_06_14.txt/A1FFHRY27CWPAN, Male, 47, MS, 5, Yes, Republican
+
+FOX_2013_05_23.txt/A32JIQCG4LKPYT, Female, 30, MA, 2, Yes, Democratic
+
+FOX_2013_05_23.txt/AXYLH3CWRU8QM, Male, 24, MD, 2, Yes, Democratic
+
+FOX_2013_05_23.txt/AS7D4MNIH56ND, Male, 20, NY, 3, Yes, Democratic
+
+FOX_2013_05_23.txt/A2BZWUB7P7TV4R, Male, 48, IN, 0, Yes, Republican
+
+FOX_2013_05_24.txt/A2WW3TBTYCX739, Female, 39, IN, 5, Yes, Independent
+
+FOX_2013_05_24.txt/A9MJVJAMLCDMV, Male, 44, default, 4, Yes, Republican
+
+FOX_2013_05_24.txt/A2CAMPAA7650H2, Female, 34, PA, 4, Yes, Green
+
+FOX_2013_05_24.txt/AS7D4MNIH56ND, Male, 20, NY, 5, Yes, Democratic
+
+FOX_2013_04_17_1.txt/A3LDOSU60MA5V8, Male, 27, AR, 4, Yes, Independent
+
+FOX_2013_04_17_1.txt/A3JHXEH79DJ83L, Female, 56, AZ, 0, Yes, Independent
+
+FOX_2013_04_17_2.txt/A1ZU6IK35B4HKA, Female, 40, WA, 4, Yes, Democratic
+
+FOX_2013_05_19_2.txt/A2URIXUC02YDNI, Male, 35, OR, 6, Yes, Republican
+
+FOX_2013_05_21_2.txt/ART2B51OIA2V3, Male, 21, NC, 5, Yes, default
+

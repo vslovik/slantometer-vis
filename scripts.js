@@ -15,7 +15,7 @@ function chart(chartName, dataFile) {
   var lineHeight = height;
 
   var chartTop = $(chartName).offset().top;
-  var parseDate = d3.time.format("%Y").parse;
+  var parseDate = d3.time.format("%Y_%m_%d").parse;
 
   var tooltip = d3.select("body")
       .append("div")
@@ -78,16 +78,26 @@ function chart(chartName, dataFile) {
     // parse the data (see parsing function, above)
     // data = parse(data);
     var title = "";
+    var dateFormat = d3.time.format("%Y");
     data.forEach(function(d) {
-        d.key = d.tag;
-        d.value = +d.sentences;
-        d.date = parseDate(d.year);
+        d.key = d.channel;
+        // d.value = +d.sentences;
+        d.green = +d.green;
+        d.yellow = +d.yellow;
+        d.red = +d.red;
+        d.value = d.green;
+        d.date = dateFormat(parseDate(d.date));
         title = d.channel;
     });
+
+    // var dataByChannel = d3.nest()
+    //         .key(function(d) { return d.channel; })
+    //         .entries(data);
+
     // data.sort(function(a, b) {
     //   return b.date - a.date;
     // });
-
+    debugger;
     var nested = nest.entries(data);
     var layers = stack(nested);
 
@@ -242,11 +252,9 @@ function chart(chartName, dataFile) {
 
 
 
-chart(".chart1", "data2.csv");
-chart(".chart2", "data1.csv");
-chart(".chart3", "data3.csv");
-// chart(".chart4", "data3.csv");
-// chart(".chart5", "data3.csv");
+chart(".chart1", "data_clean/Boston.csv");
+// chart(".chart2", "data_clean/data1.csv");
+// chart(".chart3", "data_clean/data3.csv");
 
 
 
