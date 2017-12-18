@@ -37,7 +37,7 @@ function chart(chartName, dataFile) {
   var xAxis = d3.svg.axis()
       .scale(x)
       .orient("bottom")
-      .ticks(d3.time.years, 1);
+      .ticks(d3.time.days, 1);
 
   var stack = d3.layout.stack()
       .offset("silhouette")
@@ -75,18 +75,15 @@ function chart(chartName, dataFile) {
 
   d3.csv(dataFile, function(data) {
 
-    // parse the data (see parsing function, above)
-    // data = parse(data);
     var title = "";
-    var dateFormat = d3.time.format("%Y");
     data.forEach(function(d) {
         d.key = d.channel;
         // d.value = +d.sentences;
         d.green = +d.green;
         d.yellow = +d.yellow;
         d.red = +d.red;
-        d.value = d.green;
-        d.date = dateFormat(parseDate(d.date));
+        d.value = +d.green + d.yellow + d.red;
+        d.date = parseDate(d.date);
         title = d.channel;
     });
 
@@ -97,7 +94,6 @@ function chart(chartName, dataFile) {
     // data.sort(function(a, b) {
     //   return b.date - a.date;
     // });
-    debugger;
     var nested = nest.entries(data);
     var layers = stack(nested);
 
