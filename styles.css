@@ -2,20 +2,35 @@
 
 
 body {
-	font-size: 14px;
 	font-family: 'Cousine';
+	padding: 5vh;
 }
 
-.row {
-	/*display: inline-block;*/
-	/*border: 1px solid;*/
+form {
+	margin: 3vh 10vw 3vw 0;
+	text-align: right;
+	display: none;
 }
 
-/*CHART GENERAL*/
+
+
 .chart-wrapper{
 	margin-left:-.99%;
-	width: 50vw;
+	width: 30vw;
 	/*border: 1px solid;*/
+}
+
+h4 { 
+	margin-top: 5vh;
+}
+
+.container-fluid {
+	margin: 5vh 0;
+}
+.row {	
+	margin: 0 auto !important;
+    display: inline-block;
+    position: relative;
 }
 
 /*AXES*/
@@ -78,8 +93,4 @@ body {
 	margin-top: 3px;
 	float: left;
 	margin-right: 6px;
-}
-
-form {
-	/*display: none;*/
 }

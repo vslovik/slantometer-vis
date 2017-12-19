@@ -14,15 +14,13 @@ function chart(chartName, dataFile, title) {
   var height = breakHeight(breakpoint) * 0.6 - margin.top - margin.bottom;
   var lineHeight = height;
 
-  var chartTop = $(chartName).offset().top;
   var parseDate = d3.time.format("%Y_%m_%d").parse;
   var tooltip = d3.select("body")
       .append("div")
       .attr("class", "tip")
       .style("position", "absolute")
       .style("z-index", "20")
-      .style("visibility", "hidden")
-      .style("top", 40+chartTop+"px");
+      .style("visibility", "hidden");
 
   var x = d3.time.scale().range([0, width]);
 
@@ -194,17 +192,22 @@ function chart(chartName, dataFile, title) {
       })})
       .on("mousemove", function(d, i) {
 
-        var color = d3.select(this).style('fill'); // need to know the color in order to generate the swatch
+        var color = d3.select(this).style('fill');
+          mouse = d3.mouse(this);
+          mousex = mouse[0];
+          var invertedx = x.invert(mousex);
 
-        mouse = d3.mouse(this);
-        mousex = mouse[0];
-        var invertedx = x.invert(mousex);
         d.values.forEach(function(f){
+
           var hoveredDate = (f.date.toString()).split(' ')[0];
           var invertedxDate = (invertedx.toString()).split(' ')[0];
           if (invertedxDate === hoveredDate){
+              var chartTop = $(chartName).offset().top;
+              var chartLeft = $(chartName).offset().left;
               tooltip
-                .style("left", tipX(mousex) +"px")
+                // .style("left", tipX(mousex) +"px")
+                .style("left", mousex + chartLeft +"px")
+                .style("top", chartTop +"px")
                 .html( "<div class='key'><div style='background:" + color + "' class='swatch'>&nbsp;</div></div><div class='value'>" + f.value + " sentences </div>" )
                 .style("visibility", "visible");
           }
@@ -261,7 +264,7 @@ chart(".chart3", "data_clean/BostonRaw.csv", "NBC");
 
 chart(".chart4", "data_clean/LasVegasRaw.csv", "ABC");
 chart(".chart5", "data_clean/LasVegasRaw.csv", "FOX");
-chart(".chart5", "data_clean/LasVegasRaw.csv", "NBC");
+chart(".chart6", "data_clean/LasVegasRaw.csv", "NBC");
 
 
 
@@ -298,6 +301,9 @@ function breakHeight(bp){
 function tipX(x){
   var winWidth = $(window).width();
   var tipWidth = $('.tip').width();
+
+  console.log( winWidth, tipWidth)
   x > winWidth - tipWidth - 30 ? y = x-45-tipWidth : y = x+10;
+
   return y;
 }
