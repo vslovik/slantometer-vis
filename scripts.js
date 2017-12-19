@@ -7,7 +7,7 @@
 // 
 // ***************************************************************************
 // ***************************************************************************
-function chart(chartName, dataFile) {
+function chart(chartName, dataFile, title) {
 
   var margin = {top: 20, right: 20, bottom: 20, left: 20};
   var width = $('.chart-wrapper').width() - margin.left - margin.right;
@@ -74,7 +74,6 @@ function chart(chartName, dataFile) {
 
   d3.csv(dataFile, function(dataRaw) {
 
-    var title = "";
     var data = [];
     d3.nest()
       .key(function(d) { return d.channel; })
@@ -89,10 +88,10 @@ function chart(chartName, dataFile) {
             value = +i.values;
             // d.date = dateFormat(parseDate(d.date));
             date = parseDate(k.key);
-            title = j.key;
+            channel = j.key;
 
             data.push({
-              title: title,
+              channel: channel,
               date: date,
               key: color,
               value: value
@@ -100,8 +99,8 @@ function chart(chartName, dataFile) {
           })
         })
     });
-    var filteredData = data.filter(function(d){return d.title == "NBC";}) ;
-    var nested = nest.entries(filteredData);
+    var filteredData = data.filter(function(d){return d.channel === title;});
+    var nested = nest.entries(filteredData.filter(function(d){return d.key !== "Red";}));
     var layers = stack(nested);
 
     lineHeight = height / nested.length;
@@ -255,9 +254,16 @@ function chart(chartName, dataFile) {
 
 
 
-chart(".chart1", "data_clean/LasVegasRaw.csv");
-// chart(".chart2", "data_clean/LasVegas_FOX.csv");
-// chart(".chart3", "data_clean/LasVegas_NBC.csv");
+chart(".chart1", "data_clean/BostonRaw.csv", "ABC");
+chart(".chart2", "data_clean/BostonRaw.csv", "FOX");
+chart(".chart3", "data_clean/BostonRaw.csv", "NBC");
+
+
+chart(".chart4", "data_clean/LasVegasRaw.csv", "ABC");
+chart(".chart5", "data_clean/LasVegasRaw.csv", "FOX");
+chart(".chart5", "data_clean/LasVegasRaw.csv", "NBC");
+
+
 
 
 
