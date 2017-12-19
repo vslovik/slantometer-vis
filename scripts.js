@@ -16,7 +16,6 @@ function chart(chartName, dataFile) {
 
   var chartTop = $(chartName).offset().top;
   var parseDate = d3.time.format("%Y_%m_%d").parse;
-
   var tooltip = d3.select("body")
       .append("div")
       .attr("class", "tip")
@@ -73,39 +72,48 @@ function chart(chartName, dataFile) {
 // 
 // ***************************************************************************
 
-  d3.csv(dataFile, function(data) {
+  d3.csv(dataFile, function(dataRaw) {
 
     var title = "";
-    data.forEach(function(d) {
-        d.key = d.color;
-        d.value = +d.value;
-        // d.date = dateFormat(parseDate(d.date));
-        d.date = parseDate(d.date);
-        title = d.channel;
+    var data = [];
+    d3.nest()
+      .key(function(d) { return d.channel; })
+      .key(function(d) { return d.date; })
+      .key(function(d) { return d.color; })
+      .rollup(function(v) { return v.length; })
+      .entries(dataRaw)
+      .forEach(function(j) {
+        j.values.forEach(function(k) { 
+          k.values.forEach(function(i) {
+            color = i.key;
+            value = +i.values;
+            // d.date = dateFormat(parseDate(d.date));
+            date = parseDate(k.key);
+            title = j.key;
+
+            data.push({
+              title: title,
+              date: date,
+              key: color,
+              value: value
+            })
+          })
+        })
     });
-
-    // var dataByChannel = d3.nest()
-    //         .key(function(d) { return d.channel; })
-    //         .entries(data);
-    // console.log(dataByChannel);
-
-
-    // data.sort(function(a, b) {
-    //   return b.date - a.date;
-    // });
-    var nested = nest.entries(data);
+    var filteredData = data.filter(function(d){return d.title == "NBC";}) ;
+    var nested = nest.entries(filteredData);
     var layers = stack(nested);
 
     lineHeight = height / nested.length;
-    x.domain(d3.extent(data, function(d) { return d.date; }));
-    yStacked.domain([0, d3.max(data, function(d) { return d.y0 + d.y; })]);
-    yMultiple.domain([0, d3.max(data, function(d) { return d.value; })]).range([lineHeight, 0]);
+    x.domain(d3.extent(filteredData, function(d) { return d.date; }));
+    yStacked.domain([0, d3.max(filteredData, function(d) { return d.y0 + d.y; })]);
+    yMultiple.domain([0, d3.max(filteredData, function(d) { return d.value; })]).range([lineHeight, 0]);
 
     svg.selectAll(".layer")
         .data(layers)
       .enter().append("path")
         .attr("class", "layer")
-        .attr("d", function(d) { return areaStacked(d.values); })
+        .attr("d", function(d) {return areaStacked(d.values); })
         .style("fill", function(d, i) { return z(i); });
 
     svg.append("g")
@@ -247,7 +255,7 @@ function chart(chartName, dataFile) {
 
 
 
-chart(".chart1", "data_clean/LasVegas_ABC.csv");
+chart(".chart1", "data_clean/LasVegasRaw.csv");
 // chart(".chart2", "data_clean/LasVegas_FOX.csv");
 // chart(".chart3", "data_clean/LasVegas_NBC.csv");
 
