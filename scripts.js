@@ -192,13 +192,13 @@ function chart(chartName, dataFile) {
         mouse = d3.mouse(this);
         mousex = mouse[0];
         var invertedx = x.invert(mousex);
-        var xDate = century(invertedx.getYear());
         d.values.forEach(function(f){
-          var year = (f.date.toString()).split(' ')[3];
-          if (xDate == year){
+          var hoveredDate = (f.date.toString()).split(' ')[0];
+          var invertedxDate = (invertedx.toString()).split(' ')[0];
+          if (invertedxDate === hoveredDate){
               tooltip
                 .style("left", tipX(mousex) +"px")
-                .html( "<div class='year'>" + year + "</div><div class='key'><div style='background:" + color + "' class='swatch'>&nbsp;</div></div><div class='value'>" + f.value + "  " + f.channel + "</div>" )
+                .html( "<div class='key'><div style='background:" + color + "' class='swatch'>&nbsp;</div></div><div class='value'>" + f.value + " sentences </div>" )
                 .style("visibility", "visible");
           }
         });
@@ -248,8 +248,8 @@ function chart(chartName, dataFile) {
 
 
 chart(".chart1", "data_clean/LasVegas_ABC.csv");
-chart(".chart2", "data_clean/LasVegas_FOX.csv");
-chart(".chart3", "data_clean/LasVegas_NBC.csv");
+// chart(".chart2", "data_clean/LasVegas_FOX.csv");
+// chart(".chart3", "data_clean/LasVegas_NBC.csv");
 
 
 
@@ -279,11 +279,6 @@ function breakHeight(bp){
 }
 
 
-// funciton to determine the century of the datapoint when displaying the tooltip
-function century(x){
-  x<100 ? y = '19'+x : y = '20'+(x.toString().substring(1));
-  return y;
-}
 
 // function to ensure the tip doesn't hang off the side
 function tipX(x){
