@@ -9,9 +9,9 @@
 // ***************************************************************************
 function chart(chartName, dataFile) {
 
-  var margin = {top: 20, right: 10, bottom: 20, left: 20};
+  var margin = {top: 20, right: 20, bottom: 20, left: 20};
   var width = $('.chart-wrapper').width() - margin.left - margin.right;
-  var height = breakHeight(breakpoint) * 0.3 - margin.top - margin.bottom;
+  var height = breakHeight(breakpoint) * 0.6 - margin.top - margin.bottom;
   var lineHeight = height;
 
   var chartTop = $(chartName).offset().top;
@@ -37,7 +37,7 @@ function chart(chartName, dataFile) {
   var xAxis = d3.svg.axis()
       .scale(x)
       .orient("bottom")
-      .ticks(d3.time.years, 1);
+      .ticks(d3.time.days, 1);
 
   var stack = d3.layout.stack()
       .offset("silhouette")
@@ -80,24 +80,22 @@ function chart(chartName, dataFile) {
     var title = "";
     var dateFormat = d3.time.format("%Y");
     data.forEach(function(d) {
-        d.key = d.channel;
-        // d.value = +d.sentences;
-        d.green = +d.green;
-        d.yellow = +d.yellow;
-        d.red = +d.red;
-        d.value = d.green;
-        d.date = dateFormat(parseDate(d.date));
+        d.key = d.color;
+        d.value = +d.value;
+        // d.date = dateFormat(parseDate(d.date));
+        d.date = parseDate(d.date);
         title = d.channel;
     });
 
     // var dataByChannel = d3.nest()
     //         .key(function(d) { return d.channel; })
     //         .entries(data);
+    // console.log(dataByChannel);
+
 
     // data.sort(function(a, b) {
     //   return b.date - a.date;
     // });
-    debugger;
     var nested = nest.entries(data);
     var layers = stack(nested);
 
@@ -136,7 +134,7 @@ function chart(chartName, dataFile) {
 
       var t = d3.selectAll("svg").transition().duration(750);
       var   g = t.selectAll(".layer").attr('transform', function(d, i){ return "translate(0," + (height - (i+1) * lineHeight) +")"; });
-      // g.attr("d", function(d) { return areaMultiples(d.values); });
+      g.attr("d", function(d) { return areaMultiples(d.values); });
       g.attr("y", function(d) { return lineHeight; });
     }
 
@@ -144,7 +142,7 @@ function chart(chartName, dataFile) {
 
       var t = d3.selectAll("svg").transition().duration(750);
       var    g = t.selectAll(".layer").attr('transform', function(d, i){ return "translate(0,0)"; });
-      // g.attr("d", function(d) { return areaStacked(d.values); });
+      g.attr("d", function(d) { return areaStacked(d.values); });
       g.attr("y", function(d) { return yStacked(d.values[0].y0); });
     }
 
@@ -252,9 +250,9 @@ function chart(chartName, dataFile) {
 
 
 
-chart(".chart1", "data_clean/Boston.csv");
-// chart(".chart2", "data_clean/data1.csv");
-// chart(".chart3", "data_clean/data3.csv");
+chart(".chart1", "data_clean/LasVegas_ABC.csv");
+chart(".chart2", "data_clean/LasVegas_FOX.csv");
+chart(".chart3", "data_clean/LasVegas_NBC.csv");
 
 
 
