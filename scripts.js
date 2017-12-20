@@ -11,7 +11,7 @@ function chart(chartName, dataFile, title) {
 
   var margin = {top: 20, right: 20, bottom: 20, left: 20};
   var width = $('.chart-wrapper').width() - margin.left - margin.right;
-  var height = breakHeight(breakpoint) * 0.6 - margin.top - margin.bottom;
+  var height = breakHeight(breakpoint) * 0.4 - margin.top - margin.bottom;
   var lineHeight = height;
 
   var parseDate = d3.time.format("%Y_%m_%d").parse;
@@ -74,9 +74,9 @@ function chart(chartName, dataFile, title) {
 
     var data = [];
     d3.nest()
-      .key(function(d) { return d.channel; })
-      .key(function(d) { return d.date; })
-      .key(function(d) { return d.color; })
+      .key(function(d) { return d.channel; }).sortKeys(d3.ascending)
+      .key(function(d) { return d.date; }).sortKeys(d3.ascending)
+      .key(function(d) { return d.color; }).sortKeys(d3.ascending)
       .rollup(function(v) { return v.length; })
       .entries(dataRaw)
       .forEach(function(j) {
@@ -99,6 +99,7 @@ function chart(chartName, dataFile, title) {
     });
     var filteredData = data.filter(function(d){return d.channel === title;});
     var nested = nest.entries(filteredData.filter(function(d){return d.key !== "Red";}));
+    // var nested = nest.entries(filteredData);
     var layers = stack(nested);
 
     lineHeight = height / nested.length;
@@ -261,10 +262,33 @@ chart(".chart1", "data_clean/BostonRaw.csv", "ABC");
 chart(".chart2", "data_clean/BostonRaw.csv", "FOX");
 chart(".chart3", "data_clean/BostonRaw.csv", "NBC");
 
-
 chart(".chart4", "data_clean/LasVegasRaw.csv", "ABC");
 chart(".chart5", "data_clean/LasVegasRaw.csv", "FOX");
 chart(".chart6", "data_clean/LasVegasRaw.csv", "NBC");
+
+chart(".chart7", "data_clean/GhoutaRaw.csv", "ABC");
+chart(".chart8", "data_clean/GhoutaRaw.csv", "FOX");
+chart(".chart9", "data_clean/GhoutaRaw.csv", "NBC");
+
+chart(".chart10", "data_clean/HurricaneRaw.csv", "ABC");
+chart(".chart11", "data_clean/HurricaneRaw.csv", "FOX");
+chart(".chart12", "data_clean/HurricaneRaw.csv", "NBC");
+
+chart(".chart13", "data_clean/KhanRaw.csv", "ABC");
+chart(".chart14", "data_clean/KhanRaw.csv", "FOX");
+chart(".chart15", "data_clean/KhanRaw.csv", "NBC");
+
+chart(".chart16", "data_clean/TornadoesRaw.csv", "ABC");
+chart(".chart17", "data_clean/TornadoesRaw.csv", "FOX");
+chart(".chart18", "data_clean/TornadoesRaw.csv", "NBC");
+
+chart(".chart19", "data_clean/NSARaw.csv", "ABC");
+chart(".chart20", "data_clean/NSARaw.csv", "FOX");
+chart(".chart21", "data_clean/NSARaw.csv", "NBC");
+
+chart(".chart22", "data_clean/RansomwareRaw.csv", "ABC");
+chart(".chart23", "data_clean/RansomwareRaw.csv", "FOX");
+chart(".chart24", "data_clean/RansomwareRaw.csv", "NBC");
 
 
 

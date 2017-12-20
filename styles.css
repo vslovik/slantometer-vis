@@ -9,15 +9,12 @@ body {
 form {
 	margin: 3vh 10vw 3vw 0;
 	text-align: right;
-	display: none;
+	/*display: none;*/
 }
-
-
 
 .chart-wrapper{
 	margin-left:-.99%;
 	width: 30vw;
-	/*border: 1px solid;*/
 }
 
 h4 { 
@@ -25,7 +22,9 @@ h4 {
 }
 
 .container-fluid {
-	margin: 5vh 0;
+	margin: 2vh 0;
+	/*border: 1px solid;*/
+	text-align: center !important;
 }
 .row {	
 	margin: 0 auto !important;
